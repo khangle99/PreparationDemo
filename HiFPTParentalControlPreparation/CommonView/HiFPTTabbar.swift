@@ -10,25 +10,25 @@ import UIKit
 
 class HiFPTTabbar: UIStackView {
     
-    var selectedTint: UIColor = UIColor(rgb: 0x4564ED) {
+    var selectedTint: UIColor = Colors.appPrimary {
         didSet {
             itemViews.forEach { $0.selectedTint = selectedTint}
         }
     }
-    var unSelectedTint: UIColor = UIColor(rgb: 0xC7CBCF) {
+    var unSelectedTint: UIColor = Colors.disableButton {
         didSet {
             itemViews.forEach { $0.unselectedTint = unSelectedTint}
         }
     }
-
+    
     var selectIndex: Int = 0
-  
+    
     var items: [TabItem] = [] {
         didSet {
             itemViews = items.enumerated().map({ (index, element) in
                 return TabItemView(with: element, index: index)
             })
-          
+            
             itemViews.forEach {
                 $0.translatesAutoresizingMaskIntoConstraints = false
                 $0.clipsToBounds = true
@@ -51,12 +51,11 @@ class HiFPTTabbar: UIStackView {
         super.init(frame: .zero)
         
         setNeedsLayout()
-        layoutIfNeeded()
+        //layoutIfNeeded()
         setupProperties()
         
         
         // action button
-        actionButton.setTitle("+", for: .normal)
         actionButton.translatesAutoresizingMaskIntoConstraints = false
         addSubview(actionButton)
         NSLayoutConstraint.activate([
@@ -91,7 +90,6 @@ class HiFPTTabbar: UIStackView {
         distribution = .fillEqually
         alignment = .center
         axis = .horizontal
-        
         backgroundColor = .white
     }
     
@@ -113,7 +111,6 @@ class HiFPTTabbar: UIStackView {
     }
     
 }
-
 
 // MARK: TabItemView
 class TabItemView: UIView {
@@ -144,11 +141,6 @@ class TabItemView: UIView {
         setupLayout()
         setupProperties()
         setupTapGesture()
-    }
-    
-    private func setupTapGesture() {
-        let tapReg = UITapGestureRecognizer(target: self, action: #selector(tapped(sender:)))
-        self.addGestureRecognizer(tapReg)
     }
     
     @objc func tapped(sender: UIView) {
@@ -185,7 +177,6 @@ class TabItemView: UIView {
             iconImageView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
             iconImageView.bottomAnchor.constraint(equalTo: nameLabel.topAnchor, constant: -8)
         ])
-
         
         NSLayoutConstraint.activate([
             nameLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
@@ -197,7 +188,7 @@ class TabItemView: UIView {
     }
     
     private func setupProperties() {
-        nameLabel.textColor = isSelected ? UIColor(rgb: 0x4564ED) : UIColor(rgb: 0xC7CBCF)
+        nameLabel.textColor = isSelected ? Colors.appPrimary : Colors.disableButton
         nameLabel.text = item.name
         nameLabel.textAlignment = .center
         nameLabel.font = .systemFont(ofSize: 12)
@@ -205,8 +196,12 @@ class TabItemView: UIView {
         iconImageView.image = isSelected ? item.selectedIcon : item.selectedIcon
     }
     
+    private func setupTapGesture() {
+        let tapReg = UITapGestureRecognizer(target: self, action: #selector(tapped(sender:)))
+        self.addGestureRecognizer(tapReg)
+    }
+    
     private func animateItems() {
-
         UIView.transition(with: iconImageView,
                           duration: 0.1,
                           options: .transitionCrossDissolve) { [unowned self] in

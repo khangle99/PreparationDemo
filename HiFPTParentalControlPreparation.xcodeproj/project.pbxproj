@@ -18,9 +18,31 @@
 		1A84DB962966C58600A9071E /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB952966C58600A9071E /* DeviceViewController.swift */; };
 		1A84DB992966CAA700A9071E /* UIImage+Resizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB982966CAA700A9071E /* UIImage+Resizable.swift */; };
 		1A84DB9B2966D1B300A9071E /* UINavigationBar+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB9A2966D1B300A9071E /* UINavigationBar+Style.swift */; };
-		1A84DB9D2966DA0900A9071E /* UITabbar+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB9C2966DA0900A9071E /* UITabbar+Style.swift */; };
 		1A84DB9F2966E21300A9071E /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB9E2966E21300A9071E /* UIColor+RGB.swift */; };
 		1A84DBA22967149700A9071E /* HiFPTTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBA12967149700A9071E /* HiFPTTabbar.swift */; };
+		1A84DBA42967BE0200A9071E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBA32967BE0200A9071E /* BaseViewController.swift */; };
+		1A84DBA72967C57B00A9071E /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBA52967C57B00A9071E /* FilterCell.swift */; };
+		1A84DBA82967C57B00A9071E /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBA62967C57B00A9071E /* FilterCell.xib */; };
+		1A84DBAB2967CDC700A9071E /* PCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBAA2967CDC700A9071E /* PCUser.swift */; };
+		1A84DBAF2968048400A9071E /* PCUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBAD2968048400A9071E /* PCUserCell.swift */; };
+		1A84DBB02968048500A9071E /* PCUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBAE2968048400A9071E /* PCUserCell.xib */; };
+		1A84DBB229680DF200A9071E /* PCDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBB129680DF200A9071E /* PCDevice.swift */; };
+		1A84DBB6296BAB1800A9071E /* UICollectionView+CellRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBB5296BAB1800A9071E /* UICollectionView+CellRegister.swift */; };
+		1A84DBB8296BB25100A9071E /* UITableView+CellRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBB7296BB25100A9071E /* UITableView+CellRegister.swift */; };
+		1A84DBC4296BDD4C00A9071E /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBBB296BDD4C00A9071E /* Inter-Thin.ttf */; };
+		1A84DBC5296BDD4C00A9071E /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBBC296BDD4C00A9071E /* Inter-Light.ttf */; };
+		1A84DBC6296BDD4C00A9071E /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBBD296BDD4C00A9071E /* Inter-ExtraLight.ttf */; };
+		1A84DBC7296BDD4C00A9071E /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBBE296BDD4C00A9071E /* Inter-Bold.ttf */; };
+		1A84DBC8296BDD4C00A9071E /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBBF296BDD4C00A9071E /* Inter-SemiBold.ttf */; };
+		1A84DBC9296BDD4D00A9071E /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBC0296BDD4C00A9071E /* Inter-Medium.ttf */; };
+		1A84DBCA296BDD4D00A9071E /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBC1296BDD4C00A9071E /* Inter-ExtraBold.ttf */; };
+		1A84DBCB296BDD4D00A9071E /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBC2296BDD4C00A9071E /* Inter-Black.ttf */; };
+		1A84DBCC296BDD4D00A9071E /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBC3296BDD4C00A9071E /* Inter-Regular.ttf */; };
+		1A84DBCE296BE81000A9071E /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBCD296BE81000A9071E /* UIView+Animation.swift */; };
+		1A84DBD1296C131F00A9071E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBD0296C131F00A9071E /* Color.swift */; };
+		1A84DBD5296C59F700A9071E /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBD3296C59F700A9071E /* DeviceCell.swift */; };
+		1A84DBD6296C59F700A9071E /* DeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBD4296C59F700A9071E /* DeviceCell.xib */; };
+		1A84DBF9296C788400A9071E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBF8296C788400A9071E /* Font.swift */; };
 		ED710537D662D7CA95C00E17 /* Pods_HiFPTParentalControlPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8873B88FFFEC9E9502700FF /* Pods_HiFPTParentalControlPreparation.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +60,31 @@
 		1A84DB952966C58600A9071E /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		1A84DB982966CAA700A9071E /* UIImage+Resizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resizable.swift"; sourceTree = "<group>"; };
 		1A84DB9A2966D1B300A9071E /* UINavigationBar+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Style.swift"; sourceTree = "<group>"; };
-		1A84DB9C2966DA0900A9071E /* UITabbar+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabbar+Style.swift"; sourceTree = "<group>"; };
 		1A84DB9E2966E21300A9071E /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
 		1A84DBA12967149700A9071E /* HiFPTTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiFPTTabbar.swift; sourceTree = "<group>"; };
+		1A84DBA32967BE0200A9071E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1A84DBA52967C57B00A9071E /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		1A84DBA62967C57B00A9071E /* FilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		1A84DBAA2967CDC700A9071E /* PCUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCUser.swift; sourceTree = "<group>"; };
+		1A84DBAD2968048400A9071E /* PCUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCUserCell.swift; sourceTree = "<group>"; };
+		1A84DBAE2968048400A9071E /* PCUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PCUserCell.xib; sourceTree = "<group>"; };
+		1A84DBB129680DF200A9071E /* PCDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCDevice.swift; sourceTree = "<group>"; };
+		1A84DBB5296BAB1800A9071E /* UICollectionView+CellRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CellRegister.swift"; sourceTree = "<group>"; };
+		1A84DBB7296BB25100A9071E /* UITableView+CellRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CellRegister.swift"; sourceTree = "<group>"; };
+		1A84DBBB296BDD4C00A9071E /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		1A84DBBC296BDD4C00A9071E /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		1A84DBBD296BDD4C00A9071E /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1A84DBBE296BDD4C00A9071E /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		1A84DBBF296BDD4C00A9071E /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		1A84DBC0296BDD4C00A9071E /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		1A84DBC1296BDD4C00A9071E /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1A84DBC2296BDD4C00A9071E /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		1A84DBC3296BDD4C00A9071E /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		1A84DBCD296BE81000A9071E /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		1A84DBD0296C131F00A9071E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		1A84DBD3296C59F700A9071E /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		1A84DBD4296C59F700A9071E /* DeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceCell.xib; sourceTree = "<group>"; };
+		1A84DBF8296C788400A9071E /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		56A7E6D675DE227502296EA7 /* Pods-HiFPTParentalControlPreparation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFPTParentalControlPreparation.release.xcconfig"; path = "Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation.release.xcconfig"; sourceTree = "<group>"; };
 		589F5C2357CB61BD52C59509 /* Pods-HiFPTParentalControlPreparation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFPTParentalControlPreparation.debug.xcconfig"; path = "Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation.debug.xcconfig"; sourceTree = "<group>"; };
 		D8873B88FFFEC9E9502700FF /* Pods_HiFPTParentalControlPreparation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiFPTParentalControlPreparation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +123,9 @@
 		1A84DB7A2966B3EC00A9071E /* HiFPTParentalControlPreparation */ = {
 			isa = PBXGroup;
 			children = (
+				1A84DBB9296BDD2D00A9071E /* Resource */,
+				1A84DBB4296BAADF00A9071E /* Extension */,
+				1A84DBA92967CDB300A9071E /* Model */,
 				1A84DBA02967146E00A9071E /* CommonView */,
 				1A84DB8F2966C2B800A9071E /* ParentalControlTabControllerViewController.swift */,
 				1A84DB972966CA9200A9071E /* Utils */,
@@ -91,6 +138,7 @@
 				1A84DB842966B3ED00A9071E /* Assets.xcassets */,
 				1A84DB862966B3ED00A9071E /* LaunchScreen.storyboard */,
 				1A84DB892966B3ED00A9071E /* Info.plist */,
+				1A84DBA32967BE0200A9071E /* BaseViewController.swift */,
 			);
 			path = HiFPTParentalControlPreparation;
 			sourceTree = "<group>";
@@ -98,6 +146,7 @@
 		1A84DB932966C56100A9071E /* UserTab */ = {
 			isa = PBXGroup;
 			children = (
+				1A84DBAC2968046300A9071E /* View */,
 				1A84DB912966C55B00A9071E /* UserViewController.swift */,
 			);
 			path = UserTab;
@@ -106,6 +155,7 @@
 		1A84DB942966C56900A9071E /* DeviceTab */ = {
 			isa = PBXGroup;
 			children = (
+				1A84DBD2296C59E400A9071E /* View */,
 				1A84DB952966C58600A9071E /* DeviceViewController.swift */,
 			);
 			path = DeviceTab;
@@ -116,7 +166,6 @@
 			children = (
 				1A84DB982966CAA700A9071E /* UIImage+Resizable.swift */,
 				1A84DB9A2966D1B300A9071E /* UINavigationBar+Style.swift */,
-				1A84DB9C2966DA0900A9071E /* UITabbar+Style.swift */,
 				1A84DB9E2966E21300A9071E /* UIColor+RGB.swift */,
 			);
 			path = Utils;
@@ -125,9 +174,74 @@
 		1A84DBA02967146E00A9071E /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				1A84DBA52967C57B00A9071E /* FilterCell.swift */,
+				1A84DBA62967C57B00A9071E /* FilterCell.xib */,
 				1A84DBA12967149700A9071E /* HiFPTTabbar.swift */,
 			);
 			path = CommonView;
+			sourceTree = "<group>";
+		};
+		1A84DBA92967CDB300A9071E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A84DBAA2967CDC700A9071E /* PCUser.swift */,
+				1A84DBB129680DF200A9071E /* PCDevice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A84DBAC2968046300A9071E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A84DBAD2968048400A9071E /* PCUserCell.swift */,
+				1A84DBAE2968048400A9071E /* PCUserCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A84DBB4296BAADF00A9071E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1A84DBB5296BAB1800A9071E /* UICollectionView+CellRegister.swift */,
+				1A84DBB7296BB25100A9071E /* UITableView+CellRegister.swift */,
+				1A84DBCD296BE81000A9071E /* UIView+Animation.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1A84DBB9296BDD2D00A9071E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1A84DBBA296BDD4100A9071E /* Fonts */,
+				1A84DBD0296C131F00A9071E /* Color.swift */,
+				1A84DBF8296C788400A9071E /* Font.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1A84DBBA296BDD4100A9071E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1A84DBC2296BDD4C00A9071E /* Inter-Black.ttf */,
+				1A84DBBE296BDD4C00A9071E /* Inter-Bold.ttf */,
+				1A84DBC1296BDD4C00A9071E /* Inter-ExtraBold.ttf */,
+				1A84DBBD296BDD4C00A9071E /* Inter-ExtraLight.ttf */,
+				1A84DBBC296BDD4C00A9071E /* Inter-Light.ttf */,
+				1A84DBC0296BDD4C00A9071E /* Inter-Medium.ttf */,
+				1A84DBC3296BDD4C00A9071E /* Inter-Regular.ttf */,
+				1A84DBBF296BDD4C00A9071E /* Inter-SemiBold.ttf */,
+				1A84DBBB296BDD4C00A9071E /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1A84DBD2296C59E400A9071E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A84DBD3296C59F700A9071E /* DeviceCell.swift */,
+				1A84DBD4296C59F700A9071E /* DeviceCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CFEA7E6343C1DD21C87BDADE /* Pods */ = {
@@ -158,6 +272,7 @@
 				1A84DB742966B3EC00A9071E /* Sources */,
 				1A84DB752966B3EC00A9071E /* Frameworks */,
 				1A84DB762966B3EC00A9071E /* Resources */,
+				B39568DDB951CA8710E50B2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,8 +322,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A84DB882966B3ED00A9071E /* LaunchScreen.storyboard in Resources */,
+				1A84DBB02968048500A9071E /* PCUserCell.xib in Resources */,
+				1A84DBC4296BDD4C00A9071E /* Inter-Thin.ttf in Resources */,
+				1A84DBC7296BDD4C00A9071E /* Inter-Bold.ttf in Resources */,
+				1A84DBC6296BDD4C00A9071E /* Inter-ExtraLight.ttf in Resources */,
+				1A84DBA82967C57B00A9071E /* FilterCell.xib in Resources */,
+				1A84DBCC296BDD4D00A9071E /* Inter-Regular.ttf in Resources */,
+				1A84DBCB296BDD4D00A9071E /* Inter-Black.ttf in Resources */,
 				1A84DB852966B3ED00A9071E /* Assets.xcassets in Resources */,
 				1A84DB832966B3EC00A9071E /* Main.storyboard in Resources */,
+				1A84DBC8296BDD4C00A9071E /* Inter-SemiBold.ttf in Resources */,
+				1A84DBC9296BDD4D00A9071E /* Inter-Medium.ttf in Resources */,
+				1A84DBC5296BDD4C00A9071E /* Inter-Light.ttf in Resources */,
+				1A84DBCA296BDD4D00A9071E /* Inter-ExtraBold.ttf in Resources */,
+				1A84DBD6296C59F700A9071E /* DeviceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +364,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B39568DDB951CA8710E50B2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -244,16 +388,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A84DBB6296BAB1800A9071E /* UICollectionView+CellRegister.swift in Sources */,
 				1A84DB802966B3EC00A9071E /* ViewController.swift in Sources */,
+				1A84DBF9296C788400A9071E /* Font.swift in Sources */,
 				1A84DB9F2966E21300A9071E /* UIColor+RGB.swift in Sources */,
+				1A84DBD5296C59F700A9071E /* DeviceCell.swift in Sources */,
 				1A84DB922966C55B00A9071E /* UserViewController.swift in Sources */,
 				1A84DB962966C58600A9071E /* DeviceViewController.swift in Sources */,
 				1A84DBA22967149700A9071E /* HiFPTTabbar.swift in Sources */,
+				1A84DBA72967C57B00A9071E /* FilterCell.swift in Sources */,
+				1A84DBAB2967CDC700A9071E /* PCUser.swift in Sources */,
+				1A84DBA42967BE0200A9071E /* BaseViewController.swift in Sources */,
 				1A84DB902966C2B800A9071E /* ParentalControlTabControllerViewController.swift in Sources */,
+				1A84DBAF2968048400A9071E /* PCUserCell.swift in Sources */,
+				1A84DBD1296C131F00A9071E /* Color.swift in Sources */,
+				1A84DBCE296BE81000A9071E /* UIView+Animation.swift in Sources */,
 				1A84DB992966CAA700A9071E /* UIImage+Resizable.swift in Sources */,
+				1A84DBB8296BB25100A9071E /* UITableView+CellRegister.swift in Sources */,
 				1A84DB9B2966D1B300A9071E /* UINavigationBar+Style.swift in Sources */,
+				1A84DBB229680DF200A9071E /* PCDevice.swift in Sources */,
 				1A84DB7C2966B3EC00A9071E /* AppDelegate.swift in Sources */,
-				1A84DB9D2966DA0900A9071E /* UITabbar+Style.swift in Sources */,
 				1A84DB7E2966B3EC00A9071E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +564,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +594,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

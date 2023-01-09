@@ -6,56 +6,181 @@
 //
 
 import UIKit
-import SwiftUI
 
 class ParentalControlTabController: UITabBarController {
     
+    static let topToolBarSpacing: CGFloat = 32
+    static let botToolBarSpacing: CGFloat = 15
+    static let toolBarHeight: CGFloat = 32
+    
+    // MARK: Properties
     private let customTabBar = HiFPTTabbar()
+    private lazy var notiButton: UIBarButtonItem = {
+        let button = UIButton(type: .custom)
+        NSLayoutConstraint.activate([
+            button.widthAnchor.constraint(equalToConstant: 22),
+            button.heightAnchor.constraint(equalToConstant: 22)
+        ])
+        button.setImage(UIImage(named: "noti"), for: .normal)
+        button.addTarget(self, action: #selector(notiTapped(_:)), for: .touchUpInside)
+        let barBtn = UIBarButtonItem(customView: button)
+        return barBtn
+    }()
+    
+    private lazy var moreButton: UIBarButtonItem = {
+        let button = UIButton(type: .custom)
+        button.tintColor = .white
+        NSLayoutConstraint.activate([
+            button.widthAnchor.constraint(equalToConstant: 22),
+            button.heightAnchor.constraint(equalToConstant: 22)
+        ])
+        button.setImage(UIImage(named: "more"), for: .normal)
+        button.addTarget(self, action: #selector(moreTapped(_:)), for: .touchUpInside)
+        
+        let barBtn = UIBarButtonItem(customView: button)
+        return barBtn
+    }()
+    
+    private lazy var settingButton: UIButton = {
+        let settingBtn = UIButton(type: .custom)
+        settingBtn.setImage(UIImage(named: "setting"), for: .normal)
+        NSLayoutConstraint.activate([
+            settingBtn.widthAnchor.constraint(equalToConstant: 20),
+            settingBtn.heightAnchor.constraint(equalToConstant: 20)
+        ])
+        settingBtn.addTarget(self, action: #selector(settingTapped(_:)), for: .touchUpInside)
+        return settingBtn
+    }()
+    
+    var isShowNotiBadge: Bool = false {
+        didSet {
+            notiRedDotBadge.isHidden = !isShowNotiBadge
+        }
+    }
+    
+    private lazy var notiRedDotBadge: CAShapeLayer = {
+        let layer = CAShapeLayer()
+        layer.path = UIBezierPath(ovalIn: .init(origin: .zero, size: .init(width: 7, height: 7))).cgPath
+        layer.fillColor = UIColor.red.cgColor
+        notiButton.customView?.layer.addSublayer(layer)
+        return layer
+    }()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "Parental Control"
-        
         setupNavigationBar()
         setupTabbar()
+        
+        changeVC(at: 0)
+        // show badge
+        isShowNotiBadge = true
     }
     
-//    override func viewDidLayoutSubviews() {
-//        super.viewDidLayoutSubviews()
-//        tabBar.frame.size.height = 83
-//        tabBar.frame.origin.y = view.frame.height - 83
-//    }
-//
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if let notiFrame = notiButton.customView?.frame {
+            notiRedDotBadge.frame.origin = .init(x: notiFrame.maxX - 7, y: notiFrame.minX)
+        }
+    }
+    
     private func setupNavigationBar() {
+        // set back image
+        let backImg = UIImage(named: "back")?.resizeImage(targetSize: .init(width: 21, height: 18))?.withAlignmentRectInsets(.init(top: 0, left: -10, bottom: 0, right: 0)).withRenderingMode(.alwaysOriginal)
         
-        let backImg = UIImage(named: "back")?.resizeImage(targetSize: .init(width: 21, height: 18))?.withAlignmentRectInsets(.init(top: 0, left: -10, bottom: 0, right: 0))
+        // navigationBar
+        if let navBar = navigationController?.navigationBar {
+            configureNavBarStyle(navbar: navBar, backroundColor: nil, titleColor: .white, backImage: backImg)
+        }
         
-        navigationController?.navigationBar.update(backroundColor: nil, titleColor: .black, backImage: backImg, backTitle: " ")
-
-        self.navigationController?.navigationBar.topItem?.title = " "
+        // right menu
+        navigationItem.rightBarButtonItems = [moreButton, notiButton]
     }
     
+    func configureNavBarStyle(navbar: UINavigationBar, backroundColor: UIColor? = nil, titleColor: UIColor? = nil, backImage: UIImage? = nil) {
+        if #available(iOS 13, *) {
+            // transparance nav
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithTransparentBackground()
+            appearance.shadowColor = .clear
+            if let backroundColor = backroundColor {
+                appearance.backgroundColor = backroundColor
+            }
+            if let titleColor = titleColor {
+                appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor]
+            }
+            
+            if let backImg = backImage {
+                appearance.setBackIndicatorImage(backImg, transitionMaskImage: backImg)
+            }
+            
+            navbar.standardAppearance = appearance
+            navbar.scrollEdgeAppearance = appearance
+        } else {
+            // transparance nav
+            navbar.setBackgroundImage(UIImage(), for: .default)
+            navbar.isTranslucent = true
+            navbar.shadowImage = UIImage()
+            // barTint
+            if let backroundColor = backroundColor {
+                navbar.barTintColor = backroundColor
+            }
+            // titleColor
+            if let titleColor = titleColor {
+                navbar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor]
+            }
+            
+            // backImage
+            if let backImg = backImage {
+                navbar.backIndicatorImage = backImg
+                navbar.backIndicatorTransitionMaskImage = backImage
+            }
+        }
+        
+    }
+
     private func setupTabbar() {
         tabBar.isHidden = true
         
+        //background view for tabbar
+        let background = UIView()
+        background.translatesAutoresizingMaskIntoConstraints = false
+        background.backgroundColor = .white
+        view.addSubview(background)
+        
+        customTabBar.backgroundColor = .white
         customTabBar.translatesAutoresizingMaskIntoConstraints = false
         customTabBar.items = [.init(selectedIcon: UIImage(named: "userTab")!.withRenderingMode(.alwaysTemplate), name: "Người dùng"), .init(selectedIcon: UIImage(named: "deviceTab")!.withRenderingMode(.alwaysTemplate), name: "Thiết bị") ]
         
         view.addSubview(customTabBar)
         customTabBar.hasActionButton = true
-        customTabBar.actionButton.backgroundColor = UIColor(rgb: 0x4564ED)
+        customTabBar.actionButton.backgroundColor = Colors.appPrimary
         customTabBar.heightConstraint.constant = 48
         customTabBar.widthConstraint.constant = 64
         customTabBar.actionButton.layer.cornerRadius = 24
+        customTabBar.actionButton.setImage(UIImage(named: "plus")?.resizeImage(targetSize: .init(width: 19, height: 19)), for: .normal)
+        
         customTabBar.didTapActionButton = { [weak self] in
-            
+            print("action tap")
+            let testVC = BaseViewController()
+            testVC.title = "Test"
+ 
+            testVC.view.backgroundColor = .blue
+            self?.navigationController?.pushViewController(testVC, animated: true)
         }
         
         customTabBar.didSelectTab = { [weak self] index in
-            self?.selectedIndex = index
-            
+            self?.changeVC(at: index)
         }
+        
+        // constraint background and tabbar
+        NSLayoutConstraint.activate([
+            background.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            background.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            background.topAnchor.constraint(equalTo: customTabBar.topAnchor),
+            background.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
         
         NSLayoutConstraint.activate([
             customTabBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -65,58 +190,21 @@ class ParentalControlTabController: UITabBarController {
         ])
     }
     
-    
-    private lazy var stackTabbar: UIStackView = {
-        let stack = UIStackView()
-        stack.axis = .horizontal
-        stack.distribution = .equalCentering
-        stack.alignment = .center
-        stack.layoutMargins = .init(top: 17, left: 0, bottom: 17, right: 0)
-        
-        // user tab
-        stack.addArrangedSubview(createTabItem(title: "Người dùng", image: UIImage(named: "userTab")))
-        // plus
-        let plusBtn = UIButton(type: .custom)
-        plusBtn.setImage(UIImage(named: "plus")?.withRenderingMode(.alwaysOriginal), for: .normal)
-        plusBtn.layer.cornerRadius = 28
-        plusBtn.clipsToBounds = true
-        plusBtn.backgroundColor = UIColor.init(rgb: 0x4564ED)
-        stack.addArrangedSubview(plusBtn)
-        NSLayoutConstraint.activate([
-            plusBtn.widthAnchor.constraint(equalToConstant: 64),
-            plusBtn.heightAnchor.constraint(equalToConstant: 48)
-        ])
-        
-        // device tab
-        stack.addArrangedSubview(createTabItem(title: "Thiết bị", image: UIImage(named: "deviceTab")))
-        
-        return stack
-    }()
-
-    private func createTabItem(title: String, image: UIImage? = nil) -> UIStackView {
-        let stack = UIStackView()
-        stack.alignment = .center
-        stack.spacing = 8.5
-        stack.axis = .vertical
-        
-        let tabImgView = UIImageView(image: image)
-        tabImgView.translatesAutoresizingMaskIntoConstraints = false
-        stack.addArrangedSubview(tabImgView)
-        NSLayoutConstraint.activate([
-            tabImgView.widthAnchor.constraint(equalToConstant: 23),
-            tabImgView.heightAnchor.constraint(equalToConstant: 23)
-        ])
-        
-        
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.text = title
-        //label.textColor = .black
-        stack.addArrangedSubview(label)
-        
-        
-        return stack
+    @objc func moreTapped(_ sender: UIButton) {
+        print("more")
     }
-  
-
+    
+    @objc func notiTapped(_ sender: UIButton) {
+        print("noti")
+        isShowNotiBadge = false
+    }
+    
+    @objc func settingTapped(_ sender: UIButton) {
+        print("setting")
+    }
+    
+    // update tab ui state
+    private func changeVC(at index: Int) {
+        self.selectedIndex = index
+    }
 }
