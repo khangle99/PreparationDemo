@@ -87,7 +87,7 @@ class ParentalControlTabController: UITabBarController {
     
     private func setupNavigationBar() {
         // set back image
-        let backImg = UIImage(named: "back")?.resizeImage(targetSize: .init(width: 21, height: 18))?.withAlignmentRectInsets(.init(top: 0, left: -10, bottom: 0, right: 0)).withRenderingMode(.alwaysOriginal)
+        let backImg = UIImage(named: "ic_back_white")?.resizeImage(targetSize: .init(width: 21, height: 18))?.withAlignmentRectInsets(.init(top: 0, left: -10, bottom: 0, right: 0)).withRenderingMode(.alwaysOriginal)
         
         // navigationBar
         if let navBar = navigationController?.navigationBar {

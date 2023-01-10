@@ -138,8 +138,13 @@ extension UserViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let oldIndex = IndexPath(item: selectedFilterIndex, section: 0)
         selectedFilterIndex = indexPath.item
-        collectionView.performBatchUpdates {
-            collectionView.reloadItems(at: [oldIndex, indexPath])
+        let newIndex = indexPath
+        // update state
+        if let oldCell = collectionView.cellForItem(at: oldIndex) as? FilterCell {
+            oldCell.configure(filterData: filterList[oldIndex.item], isSelect: false)
+        }
+        if let newCell = collectionView.cellForItem(at: newIndex) as? FilterCell {
+            newCell.configure(filterData: filterList[newIndex.item], isSelect: true)
         }
     }
 }
@@ -182,10 +187,9 @@ extension UserViewController: UITableViewDataSource {
         }
         
         cell.onCellTapped = { [weak self] user in
-            let vc = BaseViewController()
+            let vc = PCUserDetailViewController()
 //            self?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
             //navigationItem.backButtonDisplayMode = .minimal
-            vc.view.backgroundColor = .red
             self?.navigationController?.pushViewController(vc, animated: true)
         }
         

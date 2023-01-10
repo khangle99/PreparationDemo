@@ -114,16 +114,19 @@ extension DeviceViewController: UICollectionViewDataSource {
         cell.configure(filterData: .init(title: deviceStatus[indexPath.item], imgUrl: ""), isSelect: indexPath.row == selectedFilterIndex)
         return cell
     }
-    
-    
 }
 
 extension DeviceViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let oldIndex = IndexPath(item: selectedFilterIndex, section: 0)
         selectedFilterIndex = indexPath.item
-        collectionView.performBatchUpdates {
-            collectionView.reloadItems(at: [oldIndex, indexPath])
+        let newIndex = indexPath
+        // update state
+        if let oldCell = collectionView.cellForItem(at: oldIndex) as? FilterCell {
+            oldCell.configure(filterData: .init(title: deviceStatus[oldIndex.item], imgUrl: ""), isSelect: false)
+        }
+        if let newCell = collectionView.cellForItem(at: newIndex) as? FilterCell {
+            newCell.configure(filterData: .init(title: deviceStatus[newIndex.item], imgUrl: ""), isSelect: true)
         }
     }
 }

@@ -43,6 +43,10 @@
 		1A84DBD5296C59F700A9071E /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBD3296C59F700A9071E /* DeviceCell.swift */; };
 		1A84DBD6296C59F700A9071E /* DeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBD4296C59F700A9071E /* DeviceCell.xib */; };
 		1A84DBF9296C788400A9071E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBF8296C788400A9071E /* Font.swift */; };
+		1A84DBFD296CF2EC00A9071E /* PCUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBFB296CF2EC00A9071E /* PCUserDetailViewController.swift */; };
+		1A84DBFE296CF2EC00A9071E /* PCUserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */; };
+		1A84DC00296CF5DE00A9071E /* AvartarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBFF296CF5DE00A9071E /* AvartarView.swift */; };
+		1A84DC02296CFDE000A9071E /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DC01296CFDE000A9071E /* ButtonPrimary.swift */; };
 		ED710537D662D7CA95C00E17 /* Pods_HiFPTParentalControlPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8873B88FFFEC9E9502700FF /* Pods_HiFPTParentalControlPreparation.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +89,10 @@
 		1A84DBD3296C59F700A9071E /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		1A84DBD4296C59F700A9071E /* DeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceCell.xib; sourceTree = "<group>"; };
 		1A84DBF8296C788400A9071E /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1A84DBFB296CF2EC00A9071E /* PCUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCUserDetailViewController.swift; sourceTree = "<group>"; };
+		1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PCUserDetailViewController.xib; sourceTree = "<group>"; };
+		1A84DBFF296CF5DE00A9071E /* AvartarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvartarView.swift; sourceTree = "<group>"; };
+		1A84DC01296CFDE000A9071E /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
 		56A7E6D675DE227502296EA7 /* Pods-HiFPTParentalControlPreparation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFPTParentalControlPreparation.release.xcconfig"; path = "Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation.release.xcconfig"; sourceTree = "<group>"; };
 		589F5C2357CB61BD52C59509 /* Pods-HiFPTParentalControlPreparation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFPTParentalControlPreparation.debug.xcconfig"; path = "Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation.debug.xcconfig"; sourceTree = "<group>"; };
 		D8873B88FFFEC9E9502700FF /* Pods_HiFPTParentalControlPreparation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiFPTParentalControlPreparation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +154,7 @@
 		1A84DB932966C56100A9071E /* UserTab */ = {
 			isa = PBXGroup;
 			children = (
+				1A84DBFA296CF2BD00A9071E /* UserDetail */,
 				1A84DBAC2968046300A9071E /* View */,
 				1A84DB912966C55B00A9071E /* UserViewController.swift */,
 			);
@@ -174,9 +183,11 @@
 		1A84DBA02967146E00A9071E /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				1A84DC01296CFDE000A9071E /* ButtonPrimary.swift */,
 				1A84DBA52967C57B00A9071E /* FilterCell.swift */,
 				1A84DBA62967C57B00A9071E /* FilterCell.xib */,
 				1A84DBA12967149700A9071E /* HiFPTTabbar.swift */,
+				1A84DBFF296CF5DE00A9071E /* AvartarView.swift */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -242,6 +253,15 @@
 				1A84DBD4296C59F700A9071E /* DeviceCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1A84DBFA296CF2BD00A9071E /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1A84DBFB296CF2EC00A9071E /* PCUserDetailViewController.swift */,
+				1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */,
+			);
+			path = UserDetail;
 			sourceTree = "<group>";
 		};
 		CFEA7E6343C1DD21C87BDADE /* Pods */ = {
@@ -324,6 +344,7 @@
 				1A84DB882966B3ED00A9071E /* LaunchScreen.storyboard in Resources */,
 				1A84DBB02968048500A9071E /* PCUserCell.xib in Resources */,
 				1A84DBC4296BDD4C00A9071E /* Inter-Thin.ttf in Resources */,
+				1A84DBFE296CF2EC00A9071E /* PCUserDetailViewController.xib in Resources */,
 				1A84DBC7296BDD4C00A9071E /* Inter-Bold.ttf in Resources */,
 				1A84DBC6296BDD4C00A9071E /* Inter-ExtraLight.ttf in Resources */,
 				1A84DBA82967C57B00A9071E /* FilterCell.xib in Resources */,
@@ -390,9 +411,12 @@
 			files = (
 				1A84DBB6296BAB1800A9071E /* UICollectionView+CellRegister.swift in Sources */,
 				1A84DB802966B3EC00A9071E /* ViewController.swift in Sources */,
+				1A84DBFD296CF2EC00A9071E /* PCUserDetailViewController.swift in Sources */,
 				1A84DBF9296C788400A9071E /* Font.swift in Sources */,
 				1A84DB9F2966E21300A9071E /* UIColor+RGB.swift in Sources */,
 				1A84DBD5296C59F700A9071E /* DeviceCell.swift in Sources */,
+				1A84DC02296CFDE000A9071E /* ButtonPrimary.swift in Sources */,
+				1A84DC00296CF5DE00A9071E /* AvartarView.swift in Sources */,
 				1A84DB922966C55B00A9071E /* UserViewController.swift in Sources */,
 				1A84DB962966C58600A9071E /* DeviceViewController.swift in Sources */,
 				1A84DBA22967149700A9071E /* HiFPTTabbar.swift in Sources */,
