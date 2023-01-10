@@ -177,7 +177,7 @@
             <objects>
                 <tabBarController title="Parental Control" id="tL5-Ey-1ip" customClass="ParentalControlTabController" customModule="HiFPTParentalControlPreparation" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="cJB-mf-7gx"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FiO-aZ-R7C">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FiO-aZ-R7C" customClass="CustomHeightTabBar" customModule="HiFPTParentalControlPreparation" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

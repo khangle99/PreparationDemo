@@ -16,4 +16,6 @@ struct Colors {
     static let mainBlack = UIColor(rgb: 0x282828)
     static let textGray = UIColor(rgb: 0xAAAAAA)
     static let blue = UIColor(rgb: 0x7082EA)
+    static let textPrimary = UIColor(rgb: 0x282828)
+    static let line = UIColor(rgb: 0xEEEEEE)
 }

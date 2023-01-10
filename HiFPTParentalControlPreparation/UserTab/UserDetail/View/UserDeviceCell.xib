@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="138" id="nOI-mc-snS" customClass="UserDeviceCell" customModule="HiFPTParentalControlPreparation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nOI-mc-snS" id="exy-m5-Ia0">
+                <rect key="frame" x="0.0" y="0.0" width="407" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="7Nh-7i-0Gp">
+                        <rect key="frame" x="16" y="16" width="375" height="104"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zEd-Qf-6P2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zcR-Hh-IDX">
+                                        <rect key="frame" x="0.0" y="38" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="1fv-pl-aKc"/>
+                                            <constraint firstAttribute="width" constant="28" id="YSb-FP-W2p"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JnM-B1-XIK">
+                                        <rect key="frame" x="44" y="34" width="331" height="36"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q81-SF-pGF">
+                                                <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="17"/>
+                                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
+                                                <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mac" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epe-4j-6hV">
+                                                <rect key="frame" x="0.0" y="19" width="24.666666666666668" height="17"/>
+                                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="12"/>
+                                                <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xd-vu-53u" userLabel="Separator">
+                        <rect key="frame" x="16" y="136" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.89803921568627454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Zwa-DJ-pbk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5Xd-vu-53u" secondAttribute="trailing" constant="16" id="CnC-vr-j73"/>
+                    <constraint firstAttribute="bottom" secondItem="5Xd-vu-53u" secondAttribute="bottom" constant="1" id="VrR-wY-lpy"/>
+                    <constraint firstItem="5Xd-vu-53u" firstAttribute="leading" secondItem="exy-m5-Ia0" secondAttribute="leading" constant="16" id="X9m-p3-Wq9"/>
+                    <constraint firstItem="7Nh-7i-0Gp" firstAttribute="leading" secondItem="exy-m5-Ia0" secondAttribute="leading" constant="16" id="a6J-ED-FI5"/>
+                    <constraint firstItem="7Nh-7i-0Gp" firstAttribute="top" secondItem="exy-m5-Ia0" secondAttribute="top" constant="16" id="gQI-fT-wFY"/>
+                    <constraint firstItem="5Xd-vu-53u" firstAttribute="top" secondItem="7Nh-7i-0Gp" secondAttribute="bottom" constant="16" id="oTO-y6-oz9"/>
+                    <constraint firstAttribute="trailing" secondItem="7Nh-7i-0Gp" secondAttribute="trailing" constant="16" id="uGr-Ue-GR9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="bGF-e2-25L"/>
+            <connections>
+                <outlet property="deviceImageView" destination="zcR-Hh-IDX" id="pgR-fI-L3y"/>
+                <outlet property="deviceMacAddLbl" destination="epe-4j-6hV" id="qeo-Ub-Z0d"/>
+                <outlet property="deviceNameLbl" destination="q81-SF-pGF" id="eOq-53-K7q"/>
+                <outlet property="separator" destination="5Xd-vu-53u" id="Mxo-y0-Dut"/>
+            </connections>
+            <point key="canvasLocation" x="214.50381679389312" y="21.83098591549296"/>
+        </tableViewCell>
+    </objects>
+</document>

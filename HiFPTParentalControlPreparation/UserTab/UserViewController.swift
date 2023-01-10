@@ -28,7 +28,6 @@ class UserViewController: BaseViewController {
             }
             
             profileList = profiles
-            selectedFilterIndex = 0 // reset to all after reload
         }
     }
     
@@ -43,7 +42,7 @@ class UserViewController: BaseViewController {
                 let profile = profileList[selectedFilterIndex - 1]
                 filteredUserList = userList.filter {$0.profile.id == profile.id}
             }
-            userListTableView.reloadData()
+            //userListTableView.reloadData()
         }
     }
     
@@ -90,6 +89,7 @@ class UserViewController: BaseViewController {
 
         setupProfileFilterCV()
         setupUserListTableView()
+        selectedFilterIndex = 0
     }
     
     private func setupUserListTableView() {
@@ -117,6 +117,8 @@ class UserViewController: BaseViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.userList = MockData.getMockUser()
             self.refreshControl.endRefreshing()
+            self.selectedFilterIndex = 0
+            self.userListTableView.reloadData()
         }
     }
 }
@@ -138,6 +140,7 @@ extension UserViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let oldIndex = IndexPath(item: selectedFilterIndex, section: 0)
         selectedFilterIndex = indexPath.item
+        userListTableView.reloadData()
         let newIndex = indexPath
         // update state
         if let oldCell = collectionView.cellForItem(at: oldIndex) as? FilterCell {
@@ -181,6 +184,8 @@ extension UserViewController: UITableViewDataSource {
                 guard let index = self.userList.firstIndex(where: {$0.userId == user.userId}) else { return }
                 
                 self.userList[index].isConnecting = !isConnection
+                self.selectedFilterIndex = self.selectedFilterIndex
+                cell.configure(user: self.filteredUserList[indexPath.section])
                 
                 self.view.makeToast(!isConnection ? "Tiếp tục kết nối người dùng" : "Đã tạm ngưng người dùng", point: .init(x: self.view.bounds.width/2, y: self.view.bounds.height - 150), title: nil, image: nil, completion: nil)
             }
@@ -188,6 +193,7 @@ extension UserViewController: UITableViewDataSource {
         
         cell.onCellTapped = { [weak self] user in
             let vc = PCUserDetailViewController()
+            vc.user = user
 //            self?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
             //navigationItem.backButtonDisplayMode = .minimal
             self?.navigationController?.pushViewController(vc, animated: true)

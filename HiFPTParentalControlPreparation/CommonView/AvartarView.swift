@@ -7,54 +7,86 @@
 
 import UIKit
 
-class AvartarView: UIImageView {
+@IBDesignable
+class AvartarView: UIView {
     
-    private lazy var onlineStatusCircle: CAShapeLayer = {
-        let c = CAShapeLayer()
-        c.path = UIBezierPath(ovalIn: .init(origin: .zero, size: .init(width: 10, height: 10))).cgPath
-        c.strokeColor = UIColor.white.cgColor
-        c.fillColor = UIColor.red.cgColor
-        layer.addSublayer(c)
-        return c
+    private lazy var avartarImageView: UIImageView =  {
+        let imgView = UIImageView()
+        //imgView.contentMode = .scaleAspectFit
+        imgView.backgroundColor = .red
+        imgView.image = UIImage(named: "quanly")
+        imgView.translatesAutoresizingMaskIntoConstraints = false
+        return imgView
     }()
     
+    private lazy var statusView: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 5
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = statusColor
+        view.layer.borderColor = UIColor.white.cgColor
+        return view
+    }()
+    
+    var avartarImage: UIImage? = nil {
+        didSet {
+            avartarImageView.image = avartarImage
+        }
+    }
     
     var statusColor: UIColor = .green {
         didSet {
-            onlineStatusCircle.fillColor = statusColor.cgColor
+            statusView.backgroundColor = statusColor
         }
     }
     
     var statusCircleSize: CGSize = .init(width: 10, height: 10) {
         didSet {
-            onlineStatusCircle.path = UIBezierPath(ovalIn: .init(origin: .zero, size: statusCircleSize)).cgPath
+            statusView.frame.size = statusCircleSize
         }
     }
     
     var statusCircleInset: UIEdgeInsets = .zero {
         didSet {
-            layoutIfNeeded()
+            //layoutIfNeeded()
         }
     }
     
-    var imageCornerRadius: CGFloat = 0 {
+    @IBInspectable
+    var imageCornerRadius: CGFloat = 5 {
         didSet {
-            layer.cornerRadius = imageCornerRadius
+            avartarImageView.layer.cornerRadius = imageCornerRadius
         }
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initLayer()
+        initViews()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        initLayer()
+        initViews()
     }
     
-    private func initLayer() {
+    private func initViews() {
+        addSubview(avartarImageView)
+        addSubview(statusView)
         
+        // constraint
+        NSLayoutConstraint.activate([
+            avartarImageView.topAnchor.constraint(equalTo: topAnchor),
+            avartarImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            avartarImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            avartarImageView.trailingAnchor.constraint(equalTo: trailingAnchor)
+        ])
+//
+//        NSLayoutConstraint.activate([
+//            statusView.trailingAnchor.constraint(equalTo: trailingAnchor),
+//            statusView.bottomAnchor.constraint(equalTo: bottomAnchor),
+//            statusView.widthAnchor.constraint(equalToConstant: statusCircleSize.width),
+//            statusView.heightAnchor.constraint(equalToConstant: statusCircleSize.height)
+//        ])
     }
 
     override func layoutSubviews() {
@@ -62,9 +94,8 @@ class AvartarView: UIImageView {
         
         // calculate position status: right bottom
         let size = statusCircleSize
-        onlineStatusCircle.frame = .init(origin: .init(x: frame.maxX - size.width, y: frame.maxY - size.height), size: size)
+        statusView.frame = .init(origin: .init(x: bounds.maxX - size.width, y: bounds.maxY - size.height), size: size)
+       
     }
-    
-    
 
 }

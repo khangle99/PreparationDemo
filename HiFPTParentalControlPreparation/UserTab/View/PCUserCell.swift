@@ -45,8 +45,10 @@ class PCUserCell: UITableViewCell {
         let tintColor = user.isConnecting ? Colors.appPrimary : Colors.orange
         connectionLabel.textColor = tintColor
         connectionImg.tintColor = tintColor
+        connectionImg.image = user.isConnecting ? UIImage(named: "pause") : UIImage(named: "continue")
         onlineStatusLayer.fillColor = user.isConnecting ? Colors.onlineGreen.cgColor : Colors.disableButton.cgColor
         connectionLabel.text = user.isConnecting ? "Ngưng" : "Tiếp tục"
+        
     }
     
     override func layoutSubviews() {

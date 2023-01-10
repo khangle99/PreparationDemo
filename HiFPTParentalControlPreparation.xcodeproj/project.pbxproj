@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A35327A296D77E000C7003E /* UserDetailSecionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A353279296D77E000C7003E /* UserDetailSecionHeaderView.swift */; };
+		1A35327C296DE7BF00C7003E /* CALayer+BorderColorNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35327B296DE7BF00C7003E /* CALayer+BorderColorNib.swift */; };
+		1A35327E296DEBA500C7003E /* UIImageView+TintRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35327D296DEBA500C7003E /* UIImageView+TintRuntime.swift */; };
 		1A84DB7C2966B3EC00A9071E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7B2966B3EC00A9071E /* AppDelegate.swift */; };
 		1A84DB7E2966B3EC00A9071E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7D2966B3EC00A9071E /* SceneDelegate.swift */; };
 		1A84DB802966B3EC00A9071E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7F2966B3EC00A9071E /* ViewController.swift */; };
@@ -47,10 +50,17 @@
 		1A84DBFE296CF2EC00A9071E /* PCUserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */; };
 		1A84DC00296CF5DE00A9071E /* AvartarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBFF296CF5DE00A9071E /* AvartarView.swift */; };
 		1A84DC02296CFDE000A9071E /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DC01296CFDE000A9071E /* ButtonPrimary.swift */; };
+		1A84DC06296D5EB100A9071E /* BannedContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DC04296D5EB100A9071E /* BannedContentCell.swift */; };
+		1A84DC07296D5EB100A9071E /* BannedContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DC05296D5EB100A9071E /* BannedContentCell.xib */; };
+		1A84DC0C296D6AC500A9071E /* UserDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DC0A296D6AC500A9071E /* UserDeviceCell.swift */; };
+		1A84DC0D296D6AC500A9071E /* UserDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DC0B296D6AC500A9071E /* UserDeviceCell.xib */; };
 		ED710537D662D7CA95C00E17 /* Pods_HiFPTParentalControlPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8873B88FFFEC9E9502700FF /* Pods_HiFPTParentalControlPreparation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A353279296D77E000C7003E /* UserDetailSecionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailSecionHeaderView.swift; sourceTree = "<group>"; };
+		1A35327B296DE7BF00C7003E /* CALayer+BorderColorNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+BorderColorNib.swift"; sourceTree = "<group>"; };
+		1A35327D296DEBA500C7003E /* UIImageView+TintRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+TintRuntime.swift"; sourceTree = "<group>"; };
 		1A84DB782966B3EC00A9071E /* HiFPTParentalControlPreparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFPTParentalControlPreparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A84DB7B2966B3EC00A9071E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A84DB7D2966B3EC00A9071E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +103,10 @@
 		1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PCUserDetailViewController.xib; sourceTree = "<group>"; };
 		1A84DBFF296CF5DE00A9071E /* AvartarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvartarView.swift; sourceTree = "<group>"; };
 		1A84DC01296CFDE000A9071E /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
+		1A84DC04296D5EB100A9071E /* BannedContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannedContentCell.swift; sourceTree = "<group>"; };
+		1A84DC05296D5EB100A9071E /* BannedContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannedContentCell.xib; sourceTree = "<group>"; };
+		1A84DC0A296D6AC500A9071E /* UserDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDeviceCell.swift; sourceTree = "<group>"; };
+		1A84DC0B296D6AC500A9071E /* UserDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDeviceCell.xib; sourceTree = "<group>"; };
 		56A7E6D675DE227502296EA7 /* Pods-HiFPTParentalControlPreparation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFPTParentalControlPreparation.release.xcconfig"; path = "Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation.release.xcconfig"; sourceTree = "<group>"; };
 		589F5C2357CB61BD52C59509 /* Pods-HiFPTParentalControlPreparation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFPTParentalControlPreparation.debug.xcconfig"; path = "Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation.debug.xcconfig"; sourceTree = "<group>"; };
 		D8873B88FFFEC9E9502700FF /* Pods_HiFPTParentalControlPreparation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiFPTParentalControlPreparation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +230,8 @@
 				1A84DBB5296BAB1800A9071E /* UICollectionView+CellRegister.swift */,
 				1A84DBB7296BB25100A9071E /* UITableView+CellRegister.swift */,
 				1A84DBCD296BE81000A9071E /* UIView+Animation.swift */,
+				1A35327B296DE7BF00C7003E /* CALayer+BorderColorNib.swift */,
+				1A35327D296DEBA500C7003E /* UIImageView+TintRuntime.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -258,10 +274,23 @@
 		1A84DBFA296CF2BD00A9071E /* UserDetail */ = {
 			isa = PBXGroup;
 			children = (
+				1A84DC03296D5E8600A9071E /* View */,
 				1A84DBFB296CF2EC00A9071E /* PCUserDetailViewController.swift */,
 				1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */,
 			);
 			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		1A84DC03296D5E8600A9071E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A84DC04296D5EB100A9071E /* BannedContentCell.swift */,
+				1A84DC05296D5EB100A9071E /* BannedContentCell.xib */,
+				1A84DC0A296D6AC500A9071E /* UserDeviceCell.swift */,
+				1A84DC0B296D6AC500A9071E /* UserDeviceCell.xib */,
+				1A353279296D77E000C7003E /* UserDetailSecionHeaderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CFEA7E6343C1DD21C87BDADE /* Pods */ = {
@@ -351,7 +380,9 @@
 				1A84DBCC296BDD4D00A9071E /* Inter-Regular.ttf in Resources */,
 				1A84DBCB296BDD4D00A9071E /* Inter-Black.ttf in Resources */,
 				1A84DB852966B3ED00A9071E /* Assets.xcassets in Resources */,
+				1A84DC0D296D6AC500A9071E /* UserDeviceCell.xib in Resources */,
 				1A84DB832966B3EC00A9071E /* Main.storyboard in Resources */,
+				1A84DC07296D5EB100A9071E /* BannedContentCell.xib in Resources */,
 				1A84DBC8296BDD4C00A9071E /* Inter-SemiBold.ttf in Resources */,
 				1A84DBC9296BDD4D00A9071E /* Inter-Medium.ttf in Resources */,
 				1A84DBC5296BDD4C00A9071E /* Inter-Light.ttf in Resources */,
@@ -409,12 +440,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A35327A296D77E000C7003E /* UserDetailSecionHeaderView.swift in Sources */,
 				1A84DBB6296BAB1800A9071E /* UICollectionView+CellRegister.swift in Sources */,
 				1A84DB802966B3EC00A9071E /* ViewController.swift in Sources */,
 				1A84DBFD296CF2EC00A9071E /* PCUserDetailViewController.swift in Sources */,
 				1A84DBF9296C788400A9071E /* Font.swift in Sources */,
+				1A35327C296DE7BF00C7003E /* CALayer+BorderColorNib.swift in Sources */,
 				1A84DB9F2966E21300A9071E /* UIColor+RGB.swift in Sources */,
 				1A84DBD5296C59F700A9071E /* DeviceCell.swift in Sources */,
+				1A84DC0C296D6AC500A9071E /* UserDeviceCell.swift in Sources */,
 				1A84DC02296CFDE000A9071E /* ButtonPrimary.swift in Sources */,
 				1A84DC00296CF5DE00A9071E /* AvartarView.swift in Sources */,
 				1A84DB922966C55B00A9071E /* UserViewController.swift in Sources */,
@@ -423,9 +457,11 @@
 				1A84DBA72967C57B00A9071E /* FilterCell.swift in Sources */,
 				1A84DBAB2967CDC700A9071E /* PCUser.swift in Sources */,
 				1A84DBA42967BE0200A9071E /* BaseViewController.swift in Sources */,
+				1A84DC06296D5EB100A9071E /* BannedContentCell.swift in Sources */,
 				1A84DB902966C2B800A9071E /* ParentalControlTabControllerViewController.swift in Sources */,
 				1A84DBAF2968048400A9071E /* PCUserCell.swift in Sources */,
 				1A84DBD1296C131F00A9071E /* Color.swift in Sources */,
+				1A35327E296DEBA500C7003E /* UIImageView+TintRuntime.swift in Sources */,
 				1A84DBCE296BE81000A9071E /* UIView+Animation.swift in Sources */,
 				1A84DB992966CAA700A9071E /* UIImage+Resizable.swift in Sources */,
 				1A84DBB8296BB25100A9071E /* UITableView+CellRegister.swift in Sources */,

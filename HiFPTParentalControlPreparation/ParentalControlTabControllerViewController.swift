@@ -76,6 +76,11 @@ class ParentalControlTabController: UITabBarController {
         changeVC(at: 0)
         // show badge
         isShowNotiBadge = true
+        
+        // way 1
+//        viewControllers?.forEach {$0.additionalSafeAreaInsets = .init(top: 0, left: 0, bottom: 50, right: 0)}
+        
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -141,7 +146,7 @@ class ParentalControlTabController: UITabBarController {
     }
 
     private func setupTabbar() {
-        tabBar.isHidden = true
+        //tabBar.isHidden = true
         
         //background view for tabbar
         let background = UIView()
@@ -206,5 +211,18 @@ class ParentalControlTabController: UITabBarController {
     // update tab ui state
     private func changeVC(at index: Int) {
         self.selectedIndex = index
+    }
+}
+
+
+class CustomHeightTabBar: UITabBar {
+    
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        
+        var sizeThatFits = super.sizeThatFits(size)
+        
+        sizeThatFits.height = 83
+        
+        return sizeThatFits
     }
 }
