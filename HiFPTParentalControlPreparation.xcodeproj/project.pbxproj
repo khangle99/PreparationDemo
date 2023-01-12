@@ -10,6 +10,17 @@
 		1A35327A296D77E000C7003E /* UserDetailSecionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A353279296D77E000C7003E /* UserDetailSecionHeaderView.swift */; };
 		1A35327C296DE7BF00C7003E /* CALayer+BorderColorNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35327B296DE7BF00C7003E /* CALayer+BorderColorNib.swift */; };
 		1A35327E296DEBA500C7003E /* UIImageView+TintRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35327D296DEBA500C7003E /* UIImageView+TintRuntime.swift */; };
+		1A353286296E4BFF00C7003E /* ParentalControlConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A353285296E4BFF00C7003E /* ParentalControlConstant.swift */; };
+		1A65D5D7296EB8F000DE1BCC /* AddMoreDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5D5296EB8F000DE1BCC /* AddMoreDeviceCell.swift */; };
+		1A65D5D8296EB8F000DE1BCC /* AddMoreDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5D6296EB8F000DE1BCC /* AddMoreDeviceCell.xib */; };
+		1A65D5DB296EBA7B00DE1BCC /* UserProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5D9296EBA7B00DE1BCC /* UserProfileCell.swift */; };
+		1A65D5DC296EBA7B00DE1BCC /* UserProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5DA296EBA7B00DE1BCC /* UserProfileCell.xib */; };
+		1A65D5DF296EBBCB00DE1BCC /* UserNameTfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5DD296EBBCB00DE1BCC /* UserNameTfCell.swift */; };
+		1A65D5E0296EBBCB00DE1BCC /* UserNameTfCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5DE296EBBCB00DE1BCC /* UserNameTfCell.xib */; };
+		1A65D5E3296EBCAB00DE1BCC /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5E1296EBCAB00DE1BCC /* AvatarCell.swift */; };
+		1A65D5E4296EBCAB00DE1BCC /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5E2296EBCAB00DE1BCC /* AvatarCell.xib */; };
+		1A65D5E7296ECBAC00DE1BCC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5E5296ECBAC00DE1BCC /* HeaderView.swift */; };
+		1A65D5E8296ECBAC00DE1BCC /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5E6296ECBAC00DE1BCC /* HeaderView.xib */; };
 		1A84DB7C2966B3EC00A9071E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7B2966B3EC00A9071E /* AppDelegate.swift */; };
 		1A84DB7E2966B3EC00A9071E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7D2966B3EC00A9071E /* SceneDelegate.swift */; };
 		1A84DB802966B3EC00A9071E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7F2966B3EC00A9071E /* ViewController.swift */; };
@@ -48,12 +59,17 @@
 		1A84DBF9296C788400A9071E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBF8296C788400A9071E /* Font.swift */; };
 		1A84DBFD296CF2EC00A9071E /* PCUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBFB296CF2EC00A9071E /* PCUserDetailViewController.swift */; };
 		1A84DBFE296CF2EC00A9071E /* PCUserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */; };
-		1A84DC00296CF5DE00A9071E /* AvartarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBFF296CF5DE00A9071E /* AvartarView.swift */; };
+		1A84DC00296CF5DE00A9071E /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DBFF296CF5DE00A9071E /* AvatarView.swift */; };
 		1A84DC02296CFDE000A9071E /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DC01296CFDE000A9071E /* ButtonPrimary.swift */; };
 		1A84DC06296D5EB100A9071E /* BannedContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DC04296D5EB100A9071E /* BannedContentCell.swift */; };
 		1A84DC07296D5EB100A9071E /* BannedContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DC05296D5EB100A9071E /* BannedContentCell.xib */; };
 		1A84DC0C296D6AC500A9071E /* UserDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DC0A296D6AC500A9071E /* UserDeviceCell.swift */; };
 		1A84DC0D296D6AC500A9071E /* UserDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A84DC0B296D6AC500A9071E /* UserDeviceCell.xib */; };
+		1AFE49C7296E62BC0096927C /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE49C6296E62BC0096927C /* TextField.swift */; };
+		1AFE49E0296EB3E50096927C /* EditUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE49DE296EB3E50096927C /* EditUserViewController.swift */; };
+		1AFE49E1296EB3E50096927C /* EditUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFE49DF296EB3E50096927C /* EditUserViewController.xib */; };
+		1AFE49E5296EB6BF0096927C /* PCAssignedDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE49E3296EB6BF0096927C /* PCAssignedDeviceCell.swift */; };
+		1AFE49E6296EB6BF0096927C /* PCAssignedDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFE49E4296EB6BF0096927C /* PCAssignedDeviceCell.xib */; };
 		ED710537D662D7CA95C00E17 /* Pods_HiFPTParentalControlPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8873B88FFFEC9E9502700FF /* Pods_HiFPTParentalControlPreparation.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +77,17 @@
 		1A353279296D77E000C7003E /* UserDetailSecionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailSecionHeaderView.swift; sourceTree = "<group>"; };
 		1A35327B296DE7BF00C7003E /* CALayer+BorderColorNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+BorderColorNib.swift"; sourceTree = "<group>"; };
 		1A35327D296DEBA500C7003E /* UIImageView+TintRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+TintRuntime.swift"; sourceTree = "<group>"; };
+		1A353285296E4BFF00C7003E /* ParentalControlConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControlConstant.swift; sourceTree = "<group>"; };
+		1A65D5D5296EB8F000DE1BCC /* AddMoreDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoreDeviceCell.swift; sourceTree = "<group>"; };
+		1A65D5D6296EB8F000DE1BCC /* AddMoreDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMoreDeviceCell.xib; sourceTree = "<group>"; };
+		1A65D5D9296EBA7B00DE1BCC /* UserProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCell.swift; sourceTree = "<group>"; };
+		1A65D5DA296EBA7B00DE1BCC /* UserProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileCell.xib; sourceTree = "<group>"; };
+		1A65D5DD296EBBCB00DE1BCC /* UserNameTfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameTfCell.swift; sourceTree = "<group>"; };
+		1A65D5DE296EBBCB00DE1BCC /* UserNameTfCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNameTfCell.xib; sourceTree = "<group>"; };
+		1A65D5E1296EBCAB00DE1BCC /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		1A65D5E2296EBCAB00DE1BCC /* AvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
+		1A65D5E5296ECBAC00DE1BCC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		1A65D5E6296ECBAC00DE1BCC /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1A84DB782966B3EC00A9071E /* HiFPTParentalControlPreparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFPTParentalControlPreparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A84DB7B2966B3EC00A9071E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A84DB7D2966B3EC00A9071E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,12 +128,17 @@
 		1A84DBF8296C788400A9071E /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		1A84DBFB296CF2EC00A9071E /* PCUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCUserDetailViewController.swift; sourceTree = "<group>"; };
 		1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PCUserDetailViewController.xib; sourceTree = "<group>"; };
-		1A84DBFF296CF5DE00A9071E /* AvartarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvartarView.swift; sourceTree = "<group>"; };
+		1A84DBFF296CF5DE00A9071E /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		1A84DC01296CFDE000A9071E /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
 		1A84DC04296D5EB100A9071E /* BannedContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannedContentCell.swift; sourceTree = "<group>"; };
 		1A84DC05296D5EB100A9071E /* BannedContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannedContentCell.xib; sourceTree = "<group>"; };
 		1A84DC0A296D6AC500A9071E /* UserDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDeviceCell.swift; sourceTree = "<group>"; };
 		1A84DC0B296D6AC500A9071E /* UserDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDeviceCell.xib; sourceTree = "<group>"; };
+		1AFE49C6296E62BC0096927C /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		1AFE49DE296EB3E50096927C /* EditUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserViewController.swift; sourceTree = "<group>"; };
+		1AFE49DF296EB3E50096927C /* EditUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditUserViewController.xib; sourceTree = "<group>"; };
+		1AFE49E3296EB6BF0096927C /* PCAssignedDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCAssignedDeviceCell.swift; sourceTree = "<group>"; };
+		1AFE49E4296EB6BF0096927C /* PCAssignedDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PCAssignedDeviceCell.xib; sourceTree = "<group>"; };
 		56A7E6D675DE227502296EA7 /* Pods-HiFPTParentalControlPreparation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFPTParentalControlPreparation.release.xcconfig"; path = "Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation.release.xcconfig"; sourceTree = "<group>"; };
 		589F5C2357CB61BD52C59509 /* Pods-HiFPTParentalControlPreparation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFPTParentalControlPreparation.debug.xcconfig"; path = "Target Support Files/Pods-HiFPTParentalControlPreparation/Pods-HiFPTParentalControlPreparation.debug.xcconfig"; sourceTree = "<group>"; };
 		D8873B88FFFEC9E9502700FF /* Pods_HiFPTParentalControlPreparation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiFPTParentalControlPreparation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +156,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A35327F296E466B00C7003E /* EditUser */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE49C8296E66280096927C /* View */,
+				1AFE49DE296EB3E50096927C /* EditUserViewController.swift */,
+				1AFE49DF296EB3E50096927C /* EditUserViewController.xib */,
+			);
+			path = EditUser;
+			sourceTree = "<group>";
+		};
 		1A84DB6F2966B3EB00A9071E = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +203,7 @@
 				1A84DB862966B3ED00A9071E /* LaunchScreen.storyboard */,
 				1A84DB892966B3ED00A9071E /* Info.plist */,
 				1A84DBA32967BE0200A9071E /* BaseViewController.swift */,
+				1A353285296E4BFF00C7003E /* ParentalControlConstant.swift */,
 			);
 			path = HiFPTParentalControlPreparation;
 			sourceTree = "<group>";
@@ -168,8 +211,9 @@
 		1A84DB932966C56100A9071E /* UserTab */ = {
 			isa = PBXGroup;
 			children = (
+				1A35327F296E466B00C7003E /* EditUser */,
 				1A84DBFA296CF2BD00A9071E /* UserDetail */,
-				1A84DBAC2968046300A9071E /* View */,
+				1A84DBAC2968046300A9071E /* Cell */,
 				1A84DB912966C55B00A9071E /* UserViewController.swift */,
 			);
 			path = UserTab;
@@ -178,7 +222,7 @@
 		1A84DB942966C56900A9071E /* DeviceTab */ = {
 			isa = PBXGroup;
 			children = (
-				1A84DBD2296C59E400A9071E /* View */,
+				1A84DBD2296C59E400A9071E /* Cell */,
 				1A84DB952966C58600A9071E /* DeviceViewController.swift */,
 			);
 			path = DeviceTab;
@@ -201,7 +245,8 @@
 				1A84DBA52967C57B00A9071E /* FilterCell.swift */,
 				1A84DBA62967C57B00A9071E /* FilterCell.xib */,
 				1A84DBA12967149700A9071E /* HiFPTTabbar.swift */,
-				1A84DBFF296CF5DE00A9071E /* AvartarView.swift */,
+				1A84DBFF296CF5DE00A9071E /* AvatarView.swift */,
+				1AFE49C6296E62BC0096927C /* TextField.swift */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -215,13 +260,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1A84DBAC2968046300A9071E /* View */ = {
+		1A84DBAC2968046300A9071E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				1A84DBAD2968048400A9071E /* PCUserCell.swift */,
 				1A84DBAE2968048400A9071E /* PCUserCell.xib */,
 			);
-			path = View;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1A84DBB4296BAADF00A9071E /* Extension */ = {
@@ -262,26 +307,26 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		1A84DBD2296C59E400A9071E /* View */ = {
+		1A84DBD2296C59E400A9071E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				1A84DBD3296C59F700A9071E /* DeviceCell.swift */,
 				1A84DBD4296C59F700A9071E /* DeviceCell.xib */,
 			);
-			path = View;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1A84DBFA296CF2BD00A9071E /* UserDetail */ = {
 			isa = PBXGroup;
 			children = (
-				1A84DC03296D5E8600A9071E /* View */,
+				1A84DC03296D5E8600A9071E /* Cell */,
 				1A84DBFB296CF2EC00A9071E /* PCUserDetailViewController.swift */,
 				1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */,
 			);
 			path = UserDetail;
 			sourceTree = "<group>";
 		};
-		1A84DC03296D5E8600A9071E /* View */ = {
+		1A84DC03296D5E8600A9071E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				1A84DC04296D5EB100A9071E /* BannedContentCell.swift */,
@@ -290,7 +335,34 @@
 				1A84DC0B296D6AC500A9071E /* UserDeviceCell.xib */,
 				1A353279296D77E000C7003E /* UserDetailSecionHeaderView.swift */,
 			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1AFE49C8296E66280096927C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE49E2296EB69F0096927C /* Cell */,
+			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1AFE49E2296EB69F0096927C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE49E3296EB6BF0096927C /* PCAssignedDeviceCell.swift */,
+				1AFE49E4296EB6BF0096927C /* PCAssignedDeviceCell.xib */,
+				1A65D5D5296EB8F000DE1BCC /* AddMoreDeviceCell.swift */,
+				1A65D5D6296EB8F000DE1BCC /* AddMoreDeviceCell.xib */,
+				1A65D5D9296EBA7B00DE1BCC /* UserProfileCell.swift */,
+				1A65D5DA296EBA7B00DE1BCC /* UserProfileCell.xib */,
+				1A65D5DD296EBBCB00DE1BCC /* UserNameTfCell.swift */,
+				1A65D5DE296EBBCB00DE1BCC /* UserNameTfCell.xib */,
+				1A65D5E1296EBCAB00DE1BCC /* AvatarCell.swift */,
+				1A65D5E2296EBCAB00DE1BCC /* AvatarCell.xib */,
+				1A65D5E5296ECBAC00DE1BCC /* HeaderView.swift */,
+				1A65D5E6296ECBAC00DE1BCC /* HeaderView.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		CFEA7E6343C1DD21C87BDADE /* Pods */ = {
@@ -371,17 +443,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A84DB882966B3ED00A9071E /* LaunchScreen.storyboard in Resources */,
+				1AFE49E1296EB3E50096927C /* EditUserViewController.xib in Resources */,
 				1A84DBB02968048500A9071E /* PCUserCell.xib in Resources */,
 				1A84DBC4296BDD4C00A9071E /* Inter-Thin.ttf in Resources */,
+				1A65D5D8296EB8F000DE1BCC /* AddMoreDeviceCell.xib in Resources */,
 				1A84DBFE296CF2EC00A9071E /* PCUserDetailViewController.xib in Resources */,
 				1A84DBC7296BDD4C00A9071E /* Inter-Bold.ttf in Resources */,
 				1A84DBC6296BDD4C00A9071E /* Inter-ExtraLight.ttf in Resources */,
+				1AFE49E6296EB6BF0096927C /* PCAssignedDeviceCell.xib in Resources */,
 				1A84DBA82967C57B00A9071E /* FilterCell.xib in Resources */,
 				1A84DBCC296BDD4D00A9071E /* Inter-Regular.ttf in Resources */,
 				1A84DBCB296BDD4D00A9071E /* Inter-Black.ttf in Resources */,
 				1A84DB852966B3ED00A9071E /* Assets.xcassets in Resources */,
 				1A84DC0D296D6AC500A9071E /* UserDeviceCell.xib in Resources */,
+				1A65D5E0296EBBCB00DE1BCC /* UserNameTfCell.xib in Resources */,
 				1A84DB832966B3EC00A9071E /* Main.storyboard in Resources */,
+				1A65D5E4296EBCAB00DE1BCC /* AvatarCell.xib in Resources */,
+				1A65D5E8296ECBAC00DE1BCC /* HeaderView.xib in Resources */,
+				1A65D5DC296EBA7B00DE1BCC /* UserProfileCell.xib in Resources */,
 				1A84DC07296D5EB100A9071E /* BannedContentCell.xib in Resources */,
 				1A84DBC8296BDD4C00A9071E /* Inter-SemiBold.ttf in Resources */,
 				1A84DBC9296BDD4D00A9071E /* Inter-Medium.ttf in Resources */,
@@ -449,18 +528,25 @@
 				1A84DB9F2966E21300A9071E /* UIColor+RGB.swift in Sources */,
 				1A84DBD5296C59F700A9071E /* DeviceCell.swift in Sources */,
 				1A84DC0C296D6AC500A9071E /* UserDeviceCell.swift in Sources */,
+				1AFE49E0296EB3E50096927C /* EditUserViewController.swift in Sources */,
 				1A84DC02296CFDE000A9071E /* ButtonPrimary.swift in Sources */,
-				1A84DC00296CF5DE00A9071E /* AvartarView.swift in Sources */,
+				1A84DC00296CF5DE00A9071E /* AvatarView.swift in Sources */,
 				1A84DB922966C55B00A9071E /* UserViewController.swift in Sources */,
 				1A84DB962966C58600A9071E /* DeviceViewController.swift in Sources */,
+				1A65D5E3296EBCAB00DE1BCC /* AvatarCell.swift in Sources */,
+				1A65D5DB296EBA7B00DE1BCC /* UserProfileCell.swift in Sources */,
 				1A84DBA22967149700A9071E /* HiFPTTabbar.swift in Sources */,
 				1A84DBA72967C57B00A9071E /* FilterCell.swift in Sources */,
 				1A84DBAB2967CDC700A9071E /* PCUser.swift in Sources */,
+				1A65D5E7296ECBAC00DE1BCC /* HeaderView.swift in Sources */,
 				1A84DBA42967BE0200A9071E /* BaseViewController.swift in Sources */,
 				1A84DC06296D5EB100A9071E /* BannedContentCell.swift in Sources */,
+				1AFE49C7296E62BC0096927C /* TextField.swift in Sources */,
 				1A84DB902966C2B800A9071E /* ParentalControlTabControllerViewController.swift in Sources */,
 				1A84DBAF2968048400A9071E /* PCUserCell.swift in Sources */,
 				1A84DBD1296C131F00A9071E /* Color.swift in Sources */,
+				1AFE49E5296EB6BF0096927C /* PCAssignedDeviceCell.swift in Sources */,
+				1A65D5D7296EB8F000DE1BCC /* AddMoreDeviceCell.swift in Sources */,
 				1A35327E296DEBA500C7003E /* UIImageView+TintRuntime.swift in Sources */,
 				1A84DBCE296BE81000A9071E /* UIView+Animation.swift in Sources */,
 				1A84DB992966CAA700A9071E /* UIImage+Resizable.swift in Sources */,
@@ -468,7 +554,9 @@
 				1A84DB9B2966D1B300A9071E /* UINavigationBar+Style.swift in Sources */,
 				1A84DBB229680DF200A9071E /* PCDevice.swift in Sources */,
 				1A84DB7C2966B3EC00A9071E /* AppDelegate.swift in Sources */,
+				1A353286296E4BFF00C7003E /* ParentalControlConstant.swift in Sources */,
 				1A84DB7E2966B3EC00A9071E /* SceneDelegate.swift in Sources */,
+				1A65D5DF296EBBCB00DE1BCC /* UserNameTfCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

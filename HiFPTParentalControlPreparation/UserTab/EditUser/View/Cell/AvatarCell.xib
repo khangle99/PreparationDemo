@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AvatarCell" customModule="HiFPTParentalControlPreparation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="202"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="202"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RS0-oq-Ajd">
+                        <rect key="frame" x="143.66666666666666" y="82.666666666666686" width="96" height="96"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98431372549999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="96" id="Mph-uv-9RO"/>
+                            <constraint firstAttribute="width" constant="96" id="Z54-rq-zZD"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_camera" translatesAutoresizingMaskIntoConstraints="NO" id="Yao-bz-dII">
+                        <rect key="frame" x="222.66666666666666" y="113.66666666666669" width="33.999999999999972" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="N5u-Vs-Ga2"/>
+                            <constraint firstAttribute="height" constant="34" id="xWZ-kv-ByF"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="RS0-oq-Ajd" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="49B-Q1-Qac"/>
+                <constraint firstItem="RS0-oq-Ajd" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="6Hd-Bg-GZi"/>
+                <constraint firstItem="Yao-bz-dII" firstAttribute="centerY" secondItem="RS0-oq-Ajd" secondAttribute="centerY" id="IBx-TI-3El"/>
+                <constraint firstItem="Yao-bz-dII" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" constant="48" id="SCb-16-THx"/>
+            </constraints>
+            <size key="customSize" width="383" height="202"/>
+            <connections>
+                <outlet property="avatarImgView" destination="RS0-oq-Ajd" id="vZS-Yz-8Oq"/>
+            </connections>
+            <point key="canvasLocation" x="180.91603053435114" y="-19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_camera" width="82" height="82"/>
+    </resources>
+</document>

@@ -105,6 +105,7 @@ class UserViewController: BaseViewController {
     private func setupProfileFilterCV() {
         cvLayout.scrollDirection = .horizontal
         cvLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        cvLayout.itemSize = UICollectionViewFlowLayout.automaticSize
         filterCollectionView.backgroundColor = .clear
         filterCollectionView.showsHorizontalScrollIndicator = false
         filterCollectionView.delegate = self
@@ -130,7 +131,7 @@ extension UserViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCell", for: indexPath) as? FilterCell else { return .init() }
+        let cell: FilterCell = collectionView.dequeue(for: indexPath)
         cell.configure(filterData: filterList[indexPath.item], isSelect: indexPath.row == selectedFilterIndex)
         return cell
     }

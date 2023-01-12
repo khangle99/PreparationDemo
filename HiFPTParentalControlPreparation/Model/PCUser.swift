@@ -33,12 +33,12 @@ final class MockData {
         ]
         
         return [
-            .init(userId: "uid1", profile: profiles[0], userName: "Nguyễn Trần Trung Quân Idol", deviceCount: 3, imgURLString: "", isConnecting: true),
-            .init(userId: "uid2", profile: profiles[1], userName: "Cô Minh Hiếu", deviceCount: 5, imgURLString: ""),
-            .init(userId: "uid3", profile: profiles[1], userName: "Trần Đức Bo", deviceCount: 7, imgURLString: "", isConnecting: true),
-            .init(userId: "uid4", profile: profiles[2], userName: "Mẹ", deviceCount: 1, imgURLString: "", isConnecting: true),
-            .init(userId: "uid5", profile: profiles[2], userName: "Ba", deviceCount: 2, imgURLString: ""),
-            .init(userId: "uid6", profile: profiles[2], userName: "Thằng Bi", deviceCount: 4, imgURLString: ""),
+            .init(userId: "uid1", profile: profiles[0], userName: "Nguyễn Trần Trung Quân Idol", deviceCount: 3, imgURLString: "sampleAvatar", isConnecting: true),
+            .init(userId: "uid2", profile: profiles[1], userName: "Cô Minh Hiếu", deviceCount: 5, imgURLString: "sampleAvatar"),
+            .init(userId: "uid3", profile: profiles[1], userName: "Trần Đức Bo", deviceCount: 7, imgURLString: "sampleAvatar", isConnecting: true),
+            .init(userId: "uid4", profile: profiles[2], userName: "Mẹ", deviceCount: 1, imgURLString: "sampleAvatar", isConnecting: true),
+            .init(userId: "uid5", profile: profiles[2], userName: "Ba", deviceCount: 2, imgURLString: "sampleAvatar"),
+            .init(userId: "uid6", profile: profiles[2], userName: "Thằng Bi", deviceCount: 4, imgURLString: "sampleAvatar"),
         ]
     }
     

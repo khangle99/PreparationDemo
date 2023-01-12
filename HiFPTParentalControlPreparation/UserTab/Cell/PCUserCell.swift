@@ -9,7 +9,7 @@ import UIKit
 
 class PCUserCell: UITableViewCell {
 
-    @IBOutlet weak var avartarImg: UIImageView!
+    @IBOutlet weak var avatarImg: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var categoryLbl: UILabel!
     @IBOutlet weak var deviceCountLbl: UILabel!
@@ -37,7 +37,7 @@ class PCUserCell: UITableViewCell {
     
     func configure(user: PCUser) {
         self.user = user
-        avartarImg.image = UIImage(named: "quanly")
+        avatarImg.image = UIImage(named: user.imgURLString)
         nameLbl.text = user.userName
         categoryLbl.text = "Phân loại: \(user.profile.title)"
         deviceCountLbl.text = "\(user.deviceCount) thiết bị"
@@ -53,11 +53,11 @@ class PCUserCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        avartarImg.backgroundColor = .red
-        avartarImg.layer.cornerRadius = avartarImg.frame.height/2
+        avatarImg.backgroundColor = .red
+        avatarImg.layer.cornerRadius = avatarImg.frame.height/2
         
-        let avartarFrame = avartarImg.frame
-        onlineStatusLayer.frame = .init(origin: .init(x: avartarFrame.maxX - 10, y: avartarFrame.maxY - 10), size: .init(width: 10, height: 10))
+        let avatarFrame = avatarImg.frame
+        onlineStatusLayer.frame = .init(origin: .init(x: avatarFrame.maxX - 10, y: avatarFrame.maxY - 10), size: .init(width: 10, height: 10))
         
     }
     

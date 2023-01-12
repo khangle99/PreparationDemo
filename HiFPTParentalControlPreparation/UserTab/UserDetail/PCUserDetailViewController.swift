@@ -9,7 +9,7 @@ import UIKit
 
 class PCUserDetailViewController: BaseViewController {
 
-    @IBOutlet weak var userAvatar: AvartarView!
+    @IBOutlet weak var userAvatar: AvatarView!
     @IBOutlet weak var userDetailTbv: UITableView!
     
     @IBOutlet weak var userNameLbl: UILabel!
@@ -57,7 +57,7 @@ class PCUserDetailViewController: BaseViewController {
         userNameLbl.adjustsFontSizeToFitWidth = true
         userNameLbl.text = user.userName
         
-        userAvatar.avartarImage = UIImage(named: user.userName)
+        userAvatar.avatarImage = UIImage(named: user.imgURLString)
         
         profileImgView.image = UIImage(named: user.profile.imageURLString)
         profileTitleLbl.text = user.profile.title
@@ -92,11 +92,14 @@ class PCUserDetailViewController: BaseViewController {
     }
     
     @objc func deleteUserTapped(sender: UIView) {
+        self.view.makeToast("Fake delete api call", point: .init(x: self.view.bounds.width/2, y: self.view.bounds.height - 150), title: nil, image: nil, completion: nil)
     }
     
     @objc func connectionTapped(sender: UIView) {
         user?.isConnecting.toggle()
         if let user = self.user {
+            let isConnection = user.isConnecting
+            self.view.makeToast(isConnection ? "Tiếp tục kết nối người dùng" : "Đã tạm ngưng người dùng", point: .init(x: self.view.bounds.width/2, y: self.view.bounds.height - 150), title: nil, image: nil, completion: nil)
             updateConnectionButton(user: user)
         }
         

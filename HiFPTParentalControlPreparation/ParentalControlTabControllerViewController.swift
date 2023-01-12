@@ -168,11 +168,9 @@ class ParentalControlTabController: UITabBarController {
         
         customTabBar.didTapActionButton = { [weak self] in
             print("action tap")
-            let testVC = BaseViewController()
-            testVC.title = "Test"
- 
-            testVC.view.backgroundColor = .blue
-            self?.navigationController?.pushViewController(testVC, animated: true)
+            let addUserVC = EditUserViewController()
+            
+            self?.navigationController?.pushViewController(addUserVC, animated: true)
         }
         
         customTabBar.didSelectTab = { [weak self] index in
@@ -220,9 +218,20 @@ class CustomHeightTabBar: UITabBar {
     override func sizeThatFits(_ size: CGSize) -> CGSize {
         
         var sizeThatFits = super.sizeThatFits(size)
-        
-        sizeThatFits.height = 83
+        sizeThatFits.height = PCConstant.Tabbar.barHeigh + safeAreaBottomHeight()
         
         return sizeThatFits
+    }
+    
+    private func safeAreaBottomHeight() -> CGFloat {
+        var height: CGFloat = 0
+        if #available(iOS 13.0, *) {
+            let window = UIApplication.shared.windows.first
+            height = window?.safeAreaInsets.bottom ?? 0
+        } else {
+            let window = UIApplication.shared.keyWindow
+            height = window?.safeAreaInsets.bottom ?? 0
+        }
+        return height
     }
 }

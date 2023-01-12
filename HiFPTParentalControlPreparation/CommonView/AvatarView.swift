@@ -1,5 +1,5 @@
 //
-//  AvartarView.swift
+//  AvatarView.swift
 //  HiFPTParentalControlPreparation
 //
 //  Created by Khang L on 10/01/2023.
@@ -8,9 +8,9 @@
 import UIKit
 
 @IBDesignable
-class AvartarView: UIView {
+class AvatarView: UIView {
     
-    private lazy var avartarImageView: UIImageView =  {
+    private lazy var avatarImageView: UIImageView =  {
         let imgView = UIImageView()
         //imgView.contentMode = .scaleAspectFit
         imgView.backgroundColor = .red
@@ -28,9 +28,9 @@ class AvartarView: UIView {
         return view
     }()
     
-    var avartarImage: UIImage? = nil {
+    var avatarImage: UIImage? = nil {
         didSet {
-            avartarImageView.image = avartarImage
+            avatarImageView.image = avatarImage
         }
     }
     
@@ -55,7 +55,7 @@ class AvartarView: UIView {
     @IBInspectable
     var imageCornerRadius: CGFloat = 5 {
         didSet {
-            avartarImageView.layer.cornerRadius = imageCornerRadius
+            avatarImageView.layer.cornerRadius = imageCornerRadius
         }
     }
     
@@ -70,15 +70,15 @@ class AvartarView: UIView {
     }
     
     private func initViews() {
-        addSubview(avartarImageView)
+        addSubview(avatarImageView)
         addSubview(statusView)
         
         // constraint
         NSLayoutConstraint.activate([
-            avartarImageView.topAnchor.constraint(equalTo: topAnchor),
-            avartarImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            avartarImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            avartarImageView.trailingAnchor.constraint(equalTo: trailingAnchor)
+            avatarImageView.topAnchor.constraint(equalTo: topAnchor),
+            avatarImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            avatarImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            avatarImageView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
 //
 //        NSLayoutConstraint.activate([

@@ -31,10 +31,20 @@ extension UICollectionView {
     
     func registerNib<T: UICollectionViewCell>(of type: T.Type) where T: NibLoadableView {
         let bundle = Bundle(for: T.self)
-           let nib = UINib(nibName: T.nibName, bundle: bundle)
-           
+        let nib = UINib(nibName: T.nibName, bundle: bundle)
         register(nib, forCellWithReuseIdentifier: T.reuseIdentifier)
-       }
+    }
+    
+    func registerNib<T: UICollectionReusableView>(header: T.Type) where T: NibLoadableView {
+        let bundle = Bundle(for: T.self)
+        let nib = UINib(nibName: T.nibName, bundle: bundle)
+        register(nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: T.reuseIdentifier)
+    }
+    
+    
+    func dequeueHeader<T: UICollectionReusableView>(for indexPath: IndexPath) -> T {
+        return dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: T.reuseIdentifier, for: indexPath) as! T
+    }
     
     func dequeue<T: UICollectionViewCell>(for indexPath: IndexPath) -> T {
         return dequeueReusableCell(withReuseIdentifier: T.reuseIdentifier, for: indexPath) as! T

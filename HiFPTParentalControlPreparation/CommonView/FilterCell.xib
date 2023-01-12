@@ -46,10 +46,10 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="gfm-7E-2it" secondAttribute="bottom" id="39O-9L-c4q"/>
                 <constraint firstItem="gfm-7E-2it" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ALb-tF-v1s"/>
                 <constraint firstItem="gfm-7E-2it" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="FL2-aP-IUJ"/>
-                <constraint firstAttribute="trailing" secondItem="gfm-7E-2it" secondAttribute="trailing" constant="16" id="HzI-50-rTj"/>
+                <constraint firstAttribute="trailing" secondItem="gfm-7E-2it" secondAttribute="trailing" priority="750" constant="16" id="HzI-50-rTj"/>
+                <constraint firstAttribute="bottom" secondItem="gfm-7E-2it" secondAttribute="bottom" priority="750" id="jni-BN-5C0"/>
             </constraints>
             <size key="customSize" width="269" height="32"/>
             <connections>
