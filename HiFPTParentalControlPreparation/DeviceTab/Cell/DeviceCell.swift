@@ -10,8 +10,8 @@ import UIKit
 class DeviceCell: UITableViewCell {
 
     @IBOutlet weak var horizontalStackView: UIStackView!
-    @IBOutlet weak var deviceImgView: UIImageView!
     
+    @IBOutlet weak var deviceAvatarImgView: AvatarView!
     @IBOutlet weak var deviceNameLbl: UILabel!
     
     @IBOutlet weak var assignBtn: UIView!
@@ -23,15 +23,6 @@ class DeviceCell: UITableViewCell {
     
     private var device: PCDevice?
     
-    private lazy var onlineStatusLayer: CAShapeLayer = {
-        let c = CAShapeLayer()
-        c.path = UIBezierPath(ovalIn: .init(origin: .zero, size: .init(width: 10, height: 10))).cgPath
-        c.strokeColor = UIColor.white.cgColor
-        c.fillColor = UIColor.red.cgColor
-        horizontalStackView.layer.addSublayer(c)
-        return c
-    }()
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         assignBtn.layer.cornerRadius = 4
@@ -39,25 +30,18 @@ class DeviceCell: UITableViewCell {
         
         let assignTapGes = UITapGestureRecognizer(target: self, action: #selector(assignTapped(sender:)))
         assignBtn.addGestureRecognizer(assignTapGes)
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
         
-        layoutIfNeeded()
-        let imgFrame = deviceImgView.frame
-        
-        onlineStatusLayer.frame = .init(origin: .init(x: imgFrame.maxX - 10, y: imgFrame.maxY - 10), size: .init(width: 10, height: 10))
-        
+        deviceAvatarImgView.avatarImageView.contentMode = .scaleAspectFit
+        deviceAvatarImgView.statusCircleWidthRatio = 0.4
     }
     
     func configure(device: PCDevice) {
         self.device = device
         deviceNameLbl.text = device.deviceName
         macAddLbl.text = device.macAddress
-        deviceImgView.image = UIImage(named: device.imageURLStr) // temporary
+        deviceAvatarImgView.avatarImage = UIImage(named: device.imageURLStr) // temporary
         
-        onlineStatusLayer.fillColor = device.assigneeId != nil ? Colors.onlineGreen.cgColor : Colors.disableButton.cgColor
+        deviceAvatarImgView.statusColor = device.assigneeId != nil ? Colors.onlineGreen : Colors.disableButton
         
         if device.assigneeId != nil {
             assigneeLbl.isHidden = false

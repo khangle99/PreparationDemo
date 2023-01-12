@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AvatarCell: UICollectionViewCell {
+class AvatarHeaderCell: UICollectionViewCell {
     
     @IBOutlet weak var avatarImgView: UIImageView!
     var onAvatarTapped: (() -> Void)?
@@ -34,4 +34,4 @@ class AvatarCell: UICollectionViewCell {
     }
 }
 
-extension AvatarCell: NibLoadableView {}
+extension AvatarHeaderCell: NibLoadableView {}

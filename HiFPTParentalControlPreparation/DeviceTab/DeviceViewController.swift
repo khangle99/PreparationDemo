@@ -83,9 +83,11 @@ class DeviceViewController: BaseViewController {
     }
     
     private func setupDeviceListTableView() {
+
+        deviceListTableView.registerNib(of: DeviceCell.self)
         deviceListTableView.delegate = self
         deviceListTableView.dataSource = self
-        deviceListTableView.registerNib(of: DeviceCell.self)
+        
         deviceListTableView.rowHeight = UITableView.automaticDimension
         deviceListTableView.allowsSelection = false
         
@@ -97,9 +99,10 @@ class DeviceViewController: BaseViewController {
         cvLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         filterCollectionView.backgroundColor = .clear
         filterCollectionView.showsHorizontalScrollIndicator = false
+        filterCollectionView.registerNib(of: FilterCell.self)
         filterCollectionView.delegate = self
         filterCollectionView.dataSource = self
-        filterCollectionView.registerNib(of: FilterCell.self)
+
     }
 
 }
@@ -128,6 +131,8 @@ extension DeviceViewController: UICollectionViewDelegate {
         if let newCell = collectionView.cellForItem(at: newIndex) as? FilterCell {
             newCell.configure(filterData: .init(title: deviceStatus[newIndex.item], imgUrl: ""), isSelect: true)
         }
+        
+        deviceListTableView.scrollToRow(at: .init(row: 0, section: 0), at: .top, animated: false)
     }
 }
 

@@ -76,11 +76,7 @@ class ParentalControlTabController: UITabBarController {
         changeVC(at: 0)
         // show badge
         isShowNotiBadge = true
-        
-        // way 1
-//        viewControllers?.forEach {$0.additionalSafeAreaInsets = .init(top: 0, left: 0, bottom: 50, right: 0)}
-        
-        
+       
     }
     
     override func viewDidLayoutSubviews() {

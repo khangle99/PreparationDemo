@@ -10,45 +10,41 @@ import UIKit
 @IBDesignable
 class AvatarView: UIView {
     
-    private lazy var avatarImageView: UIImageView =  {
+    lazy var avatarImageView: UIImageView =  {
         let imgView = UIImageView()
-        //imgView.contentMode = .scaleAspectFit
-        imgView.backgroundColor = .red
-        imgView.image = UIImage(named: "quanly")
+        imgView.contentMode = .scaleAspectFill
+        imgView.clipsToBounds = true
         imgView.translatesAutoresizingMaskIntoConstraints = false
         return imgView
     }()
     
-    private lazy var statusView: UIView = {
+    lazy var statusView: UIView = {
         let view = UIView()
-        view.layer.cornerRadius = 5
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = statusColor
         view.layer.borderColor = UIColor.white.cgColor
+        view.layer.borderWidth = 1
         return view
     }()
     
+    @IBInspectable
     var avatarImage: UIImage? = nil {
         didSet {
             avatarImageView.image = avatarImage
         }
     }
     
+    @IBInspectable
     var statusColor: UIColor = .green {
         didSet {
             statusView.backgroundColor = statusColor
         }
     }
     
-    var statusCircleSize: CGSize = .init(width: 10, height: 10) {
+    @IBInspectable
+    var statusCircleWidthRatio: CGFloat = 0.25 {
         didSet {
-            statusView.frame.size = statusCircleSize
-        }
-    }
-    
-    var statusCircleInset: UIEdgeInsets = .zero {
-        didSet {
-            //layoutIfNeeded()
+            setNeedsLayout()
         }
     }
     
@@ -56,8 +52,23 @@ class AvatarView: UIView {
     var imageCornerRadius: CGFloat = 5 {
         didSet {
             avatarImageView.layer.cornerRadius = imageCornerRadius
+            //            imageCornerMask.path = UIBezierPath(roundedRect: layer.bounds, cornerRadius: imageCornerRadius).cgPath
         }
     }
+    
+    @IBInspectable
+    var statusIconDegree: CGFloat = 315 {
+        didSet {
+            let (horizontal, vertical) = calculatePosition(angle: statusIconDegree)
+            statusView.center = CGPoint(x: bounds.width * horizontal, y: bounds.height * vertical)
+        }
+    }
+    
+    //    private lazy var imageCornerMask: CAShapeLayer = {
+    //        let mask = CAShapeLayer()
+    //        avatarImageView.layer.mask = mask
+    //        return mask
+    //    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -70,32 +81,47 @@ class AvatarView: UIView {
     }
     
     private func initViews() {
+        backgroundColor = .clear
         addSubview(avatarImageView)
         addSubview(statusView)
         
-        // constraint
+        // constraint avatarImgView
         NSLayoutConstraint.activate([
             avatarImageView.topAnchor.constraint(equalTo: topAnchor),
             avatarImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             avatarImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             avatarImageView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
-//
-//        NSLayoutConstraint.activate([
-//            statusView.trailingAnchor.constraint(equalTo: trailingAnchor),
-//            statusView.bottomAnchor.constraint(equalTo: bottomAnchor),
-//            statusView.widthAnchor.constraint(equalToConstant: statusCircleSize.width),
-//            statusView.heightAnchor.constraint(equalToConstant: statusCircleSize.height)
-//        ])
     }
-
+    
+    ///  Horizontal: 0.0 -> 1.0 (left edge -> right edge). Vertical: 0.0 -> 1.0 (top edge -> bottom edge)
+    /// - Parameter angle: degree angle (from right, counter clock around circle)
+    /// - Returns: Position tuple
+    private func calculatePosition(angle: CGFloat) -> (CGFloat, CGFloat) {
+        let radian = angle * .pi / 180
+        let horizontal = (1 + cos(radian)) / 2
+        let vertical = (1 - sin(radian)) / 2
+        return (horizontal, vertical)
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
+        layoutStatusView()
         
-        // calculate position status: right bottom
-        let size = statusCircleSize
-        statusView.frame = .init(origin: .init(x: bounds.maxX - size.width, y: bounds.maxY - size.height), size: size)
-       
+//        imageCornerMask.path = UIBezierPath(roundedRect: layer.bounds, cornerRadius: bounds.height/2).cgPath
     }
-
+    
+    private func layoutStatusView() {
+        
+        /* statusView layout logic:
+         position: center it to avatar image circle border
+         size: calculate base on statusCircleWidthRatio, which relative on avatarImgView width
+         */
+        
+        let (horizontal, vertical) = calculatePosition(angle: statusIconDegree)
+        statusView.center = CGPoint(x: bounds.width * horizontal, y: bounds.height * vertical)
+        let size = statusCircleWidthRatio * bounds.size.width
+        statusView.bounds.size = CGSize(width: size, height: size)
+        statusView.layer.cornerRadius = statusView.frame.height / 2
+    }
 }

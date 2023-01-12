@@ -11,16 +11,29 @@
 		1A35327C296DE7BF00C7003E /* CALayer+BorderColorNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35327B296DE7BF00C7003E /* CALayer+BorderColorNib.swift */; };
 		1A35327E296DEBA500C7003E /* UIImageView+TintRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35327D296DEBA500C7003E /* UIImageView+TintRuntime.swift */; };
 		1A353286296E4BFF00C7003E /* ParentalControlConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A353285296E4BFF00C7003E /* ParentalControlConstant.swift */; };
+		1A50789C297079F500E73E64 /* HeaderBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A50789B297079F500E73E64 /* HeaderBarViewController.swift */; };
+		1A50789F297080A600E73E64 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A50789D297080A600E73E64 /* UserInfoCell.swift */; };
+		1A5078A0297080A600E73E64 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A50789E297080A600E73E64 /* UserInfoCell.xib */; };
 		1A65D5D7296EB8F000DE1BCC /* AddMoreDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5D5296EB8F000DE1BCC /* AddMoreDeviceCell.swift */; };
 		1A65D5D8296EB8F000DE1BCC /* AddMoreDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5D6296EB8F000DE1BCC /* AddMoreDeviceCell.xib */; };
 		1A65D5DB296EBA7B00DE1BCC /* UserProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5D9296EBA7B00DE1BCC /* UserProfileCell.swift */; };
 		1A65D5DC296EBA7B00DE1BCC /* UserProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5DA296EBA7B00DE1BCC /* UserProfileCell.xib */; };
 		1A65D5DF296EBBCB00DE1BCC /* UserNameTfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5DD296EBBCB00DE1BCC /* UserNameTfCell.swift */; };
 		1A65D5E0296EBBCB00DE1BCC /* UserNameTfCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5DE296EBBCB00DE1BCC /* UserNameTfCell.xib */; };
-		1A65D5E3296EBCAB00DE1BCC /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5E1296EBCAB00DE1BCC /* AvatarCell.swift */; };
-		1A65D5E4296EBCAB00DE1BCC /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5E2296EBCAB00DE1BCC /* AvatarCell.xib */; };
+		1A65D5E3296EBCAB00DE1BCC /* AvatarHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5E1296EBCAB00DE1BCC /* AvatarHeaderCell.swift */; };
+		1A65D5E4296EBCAB00DE1BCC /* AvatarHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5E2296EBCAB00DE1BCC /* AvatarHeaderCell.xib */; };
 		1A65D5E7296ECBAC00DE1BCC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5E5296ECBAC00DE1BCC /* HeaderView.swift */; };
 		1A65D5E8296ECBAC00DE1BCC /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5E6296ECBAC00DE1BCC /* HeaderView.xib */; };
+		1A65D5EC296FAE8D00DE1BCC /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5EA296FAE8D00DE1BCC /* AvatarPickerViewController.swift */; };
+		1A65D5ED296FAE8D00DE1BCC /* AvatarPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5EB296FAE8D00DE1BCC /* AvatarPickerViewController.xib */; };
+		1A65D5F3296FCA5500DE1BCC /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5F1296FCA5500DE1BCC /* AvatarCell.swift */; };
+		1A65D5F4296FCA5500DE1BCC /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5F2296FCA5500DE1BCC /* AvatarCell.xib */; };
+		1A65D5F6296FCB7300DE1BCC /* CheckedLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5F5296FCB7300DE1BCC /* CheckedLayer.swift */; };
+		1A65D5F9296FE0FF00DE1BCC /* UploadSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5F7296FE0FF00DE1BCC /* UploadSelectCell.swift */; };
+		1A65D5FA296FE0FF00DE1BCC /* UploadSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5F8296FE0FF00DE1BCC /* UploadSelectCell.xib */; };
+		1A65D5FE296FFA9F00DE1BCC /* PhotoSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5FC296FFA9F00DE1BCC /* PhotoSourceViewController.swift */; };
+		1A65D5FF296FFA9F00DE1BCC /* PhotoSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5FD296FFA9F00DE1BCC /* PhotoSourceViewController.xib */; };
+		1A65D602297005CF00DE1BCC /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D601297005CF00DE1BCC /* PopupManager.swift */; };
 		1A84DB7C2966B3EC00A9071E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7B2966B3EC00A9071E /* AppDelegate.swift */; };
 		1A84DB7E2966B3EC00A9071E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7D2966B3EC00A9071E /* SceneDelegate.swift */; };
 		1A84DB802966B3EC00A9071E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7F2966B3EC00A9071E /* ViewController.swift */; };
@@ -78,16 +91,29 @@
 		1A35327B296DE7BF00C7003E /* CALayer+BorderColorNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+BorderColorNib.swift"; sourceTree = "<group>"; };
 		1A35327D296DEBA500C7003E /* UIImageView+TintRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+TintRuntime.swift"; sourceTree = "<group>"; };
 		1A353285296E4BFF00C7003E /* ParentalControlConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControlConstant.swift; sourceTree = "<group>"; };
+		1A50789B297079F500E73E64 /* HeaderBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBarViewController.swift; sourceTree = "<group>"; };
+		1A50789D297080A600E73E64 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		1A50789E297080A600E73E64 /* UserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
 		1A65D5D5296EB8F000DE1BCC /* AddMoreDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoreDeviceCell.swift; sourceTree = "<group>"; };
 		1A65D5D6296EB8F000DE1BCC /* AddMoreDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMoreDeviceCell.xib; sourceTree = "<group>"; };
 		1A65D5D9296EBA7B00DE1BCC /* UserProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCell.swift; sourceTree = "<group>"; };
 		1A65D5DA296EBA7B00DE1BCC /* UserProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileCell.xib; sourceTree = "<group>"; };
 		1A65D5DD296EBBCB00DE1BCC /* UserNameTfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameTfCell.swift; sourceTree = "<group>"; };
 		1A65D5DE296EBBCB00DE1BCC /* UserNameTfCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNameTfCell.xib; sourceTree = "<group>"; };
-		1A65D5E1296EBCAB00DE1BCC /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
-		1A65D5E2296EBCAB00DE1BCC /* AvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
+		1A65D5E1296EBCAB00DE1BCC /* AvatarHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarHeaderCell.swift; sourceTree = "<group>"; };
+		1A65D5E2296EBCAB00DE1BCC /* AvatarHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarHeaderCell.xib; sourceTree = "<group>"; };
 		1A65D5E5296ECBAC00DE1BCC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1A65D5E6296ECBAC00DE1BCC /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		1A65D5EA296FAE8D00DE1BCC /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
+		1A65D5EB296FAE8D00DE1BCC /* AvatarPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarPickerViewController.xib; sourceTree = "<group>"; };
+		1A65D5F1296FCA5500DE1BCC /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		1A65D5F2296FCA5500DE1BCC /* AvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
+		1A65D5F5296FCB7300DE1BCC /* CheckedLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedLayer.swift; sourceTree = "<group>"; };
+		1A65D5F7296FE0FF00DE1BCC /* UploadSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadSelectCell.swift; sourceTree = "<group>"; };
+		1A65D5F8296FE0FF00DE1BCC /* UploadSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadSelectCell.xib; sourceTree = "<group>"; };
+		1A65D5FC296FFA9F00DE1BCC /* PhotoSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSourceViewController.swift; sourceTree = "<group>"; };
+		1A65D5FD296FFA9F00DE1BCC /* PhotoSourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSourceViewController.xib; sourceTree = "<group>"; };
+		1A65D601297005CF00DE1BCC /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		1A84DB782966B3EC00A9071E /* HiFPTParentalControlPreparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFPTParentalControlPreparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A84DB7B2966B3EC00A9071E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A84DB7D2966B3EC00A9071E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,11 +185,51 @@
 		1A35327F296E466B00C7003E /* EditUser */ = {
 			isa = PBXGroup;
 			children = (
+				1A65D5E9296FAE3400DE1BCC /* AvatarPickerPopUp */,
 				1AFE49C8296E66280096927C /* View */,
 				1AFE49DE296EB3E50096927C /* EditUserViewController.swift */,
 				1AFE49DF296EB3E50096927C /* EditUserViewController.xib */,
 			);
 			path = EditUser;
+			sourceTree = "<group>";
+		};
+		1A65D5E9296FAE3400DE1BCC /* AvatarPickerPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				1A65D5FB296FFA7200DE1BCC /* PhotoSourceBTS */,
+				1A65D5F0296FC9C500DE1BCC /* Cell */,
+				1A65D5EA296FAE8D00DE1BCC /* AvatarPickerViewController.swift */,
+				1A65D5EB296FAE8D00DE1BCC /* AvatarPickerViewController.xib */,
+			);
+			path = AvatarPickerPopUp;
+			sourceTree = "<group>";
+		};
+		1A65D5F0296FC9C500DE1BCC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1A65D5F1296FCA5500DE1BCC /* AvatarCell.swift */,
+				1A65D5F2296FCA5500DE1BCC /* AvatarCell.xib */,
+				1A65D5F7296FE0FF00DE1BCC /* UploadSelectCell.swift */,
+				1A65D5F8296FE0FF00DE1BCC /* UploadSelectCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1A65D5FB296FFA7200DE1BCC /* PhotoSourceBTS */ = {
+			isa = PBXGroup;
+			children = (
+				1A65D5FC296FFA9F00DE1BCC /* PhotoSourceViewController.swift */,
+				1A65D5FD296FFA9F00DE1BCC /* PhotoSourceViewController.xib */,
+			);
+			path = PhotoSourceBTS;
+			sourceTree = "<group>";
+		};
+		1A65D600297005C300DE1BCC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1A65D601297005CF00DE1BCC /* PopupManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		1A84DB6F2966B3EB00A9071E = {
@@ -187,6 +253,7 @@
 		1A84DB7A2966B3EC00A9071E /* HiFPTParentalControlPreparation */ = {
 			isa = PBXGroup;
 			children = (
+				1A65D600297005C300DE1BCC /* Manager */,
 				1A84DBB9296BDD2D00A9071E /* Resource */,
 				1A84DBB4296BAADF00A9071E /* Extension */,
 				1A84DBA92967CDB300A9071E /* Model */,
@@ -204,6 +271,7 @@
 				1A84DB892966B3ED00A9071E /* Info.plist */,
 				1A84DBA32967BE0200A9071E /* BaseViewController.swift */,
 				1A353285296E4BFF00C7003E /* ParentalControlConstant.swift */,
+				1A50789B297079F500E73E64 /* HeaderBarViewController.swift */,
 			);
 			path = HiFPTParentalControlPreparation;
 			sourceTree = "<group>";
@@ -247,6 +315,7 @@
 				1A84DBA12967149700A9071E /* HiFPTTabbar.swift */,
 				1A84DBFF296CF5DE00A9071E /* AvatarView.swift */,
 				1AFE49C6296E62BC0096927C /* TextField.swift */,
+				1A65D5F5296FCB7300DE1BCC /* CheckedLayer.swift */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -334,6 +403,8 @@
 				1A84DC0A296D6AC500A9071E /* UserDeviceCell.swift */,
 				1A84DC0B296D6AC500A9071E /* UserDeviceCell.xib */,
 				1A353279296D77E000C7003E /* UserDetailSecionHeaderView.swift */,
+				1A50789D297080A600E73E64 /* UserInfoCell.swift */,
+				1A50789E297080A600E73E64 /* UserInfoCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -357,8 +428,8 @@
 				1A65D5DA296EBA7B00DE1BCC /* UserProfileCell.xib */,
 				1A65D5DD296EBBCB00DE1BCC /* UserNameTfCell.swift */,
 				1A65D5DE296EBBCB00DE1BCC /* UserNameTfCell.xib */,
-				1A65D5E1296EBCAB00DE1BCC /* AvatarCell.swift */,
-				1A65D5E2296EBCAB00DE1BCC /* AvatarCell.xib */,
+				1A65D5E1296EBCAB00DE1BCC /* AvatarHeaderCell.swift */,
+				1A65D5E2296EBCAB00DE1BCC /* AvatarHeaderCell.xib */,
 				1A65D5E5296ECBAC00DE1BCC /* HeaderView.swift */,
 				1A65D5E6296ECBAC00DE1BCC /* HeaderView.xib */,
 			);
@@ -450,7 +521,9 @@
 				1A84DBFE296CF2EC00A9071E /* PCUserDetailViewController.xib in Resources */,
 				1A84DBC7296BDD4C00A9071E /* Inter-Bold.ttf in Resources */,
 				1A84DBC6296BDD4C00A9071E /* Inter-ExtraLight.ttf in Resources */,
+				1A5078A0297080A600E73E64 /* UserInfoCell.xib in Resources */,
 				1AFE49E6296EB6BF0096927C /* PCAssignedDeviceCell.xib in Resources */,
+				1A65D5FF296FFA9F00DE1BCC /* PhotoSourceViewController.xib in Resources */,
 				1A84DBA82967C57B00A9071E /* FilterCell.xib in Resources */,
 				1A84DBCC296BDD4D00A9071E /* Inter-Regular.ttf in Resources */,
 				1A84DBCB296BDD4D00A9071E /* Inter-Black.ttf in Resources */,
@@ -458,15 +531,18 @@
 				1A84DC0D296D6AC500A9071E /* UserDeviceCell.xib in Resources */,
 				1A65D5E0296EBBCB00DE1BCC /* UserNameTfCell.xib in Resources */,
 				1A84DB832966B3EC00A9071E /* Main.storyboard in Resources */,
-				1A65D5E4296EBCAB00DE1BCC /* AvatarCell.xib in Resources */,
+				1A65D5E4296EBCAB00DE1BCC /* AvatarHeaderCell.xib in Resources */,
 				1A65D5E8296ECBAC00DE1BCC /* HeaderView.xib in Resources */,
 				1A65D5DC296EBA7B00DE1BCC /* UserProfileCell.xib in Resources */,
+				1A65D5F4296FCA5500DE1BCC /* AvatarCell.xib in Resources */,
 				1A84DC07296D5EB100A9071E /* BannedContentCell.xib in Resources */,
 				1A84DBC8296BDD4C00A9071E /* Inter-SemiBold.ttf in Resources */,
 				1A84DBC9296BDD4D00A9071E /* Inter-Medium.ttf in Resources */,
 				1A84DBC5296BDD4C00A9071E /* Inter-Light.ttf in Resources */,
 				1A84DBCA296BDD4D00A9071E /* Inter-ExtraBold.ttf in Resources */,
 				1A84DBD6296C59F700A9071E /* DeviceCell.xib in Resources */,
+				1A65D5FA296FE0FF00DE1BCC /* UploadSelectCell.xib in Resources */,
+				1A65D5ED296FAE8D00DE1BCC /* AvatarPickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,9 +599,11 @@
 				1A84DBB6296BAB1800A9071E /* UICollectionView+CellRegister.swift in Sources */,
 				1A84DB802966B3EC00A9071E /* ViewController.swift in Sources */,
 				1A84DBFD296CF2EC00A9071E /* PCUserDetailViewController.swift in Sources */,
+				1A65D5F9296FE0FF00DE1BCC /* UploadSelectCell.swift in Sources */,
 				1A84DBF9296C788400A9071E /* Font.swift in Sources */,
 				1A35327C296DE7BF00C7003E /* CALayer+BorderColorNib.swift in Sources */,
 				1A84DB9F2966E21300A9071E /* UIColor+RGB.swift in Sources */,
+				1A65D5F6296FCB7300DE1BCC /* CheckedLayer.swift in Sources */,
 				1A84DBD5296C59F700A9071E /* DeviceCell.swift in Sources */,
 				1A84DC0C296D6AC500A9071E /* UserDeviceCell.swift in Sources */,
 				1AFE49E0296EB3E50096927C /* EditUserViewController.swift in Sources */,
@@ -533,16 +611,20 @@
 				1A84DC00296CF5DE00A9071E /* AvatarView.swift in Sources */,
 				1A84DB922966C55B00A9071E /* UserViewController.swift in Sources */,
 				1A84DB962966C58600A9071E /* DeviceViewController.swift in Sources */,
-				1A65D5E3296EBCAB00DE1BCC /* AvatarCell.swift in Sources */,
+				1A65D5E3296EBCAB00DE1BCC /* AvatarHeaderCell.swift in Sources */,
 				1A65D5DB296EBA7B00DE1BCC /* UserProfileCell.swift in Sources */,
 				1A84DBA22967149700A9071E /* HiFPTTabbar.swift in Sources */,
 				1A84DBA72967C57B00A9071E /* FilterCell.swift in Sources */,
 				1A84DBAB2967CDC700A9071E /* PCUser.swift in Sources */,
 				1A65D5E7296ECBAC00DE1BCC /* HeaderView.swift in Sources */,
+				1A50789F297080A600E73E64 /* UserInfoCell.swift in Sources */,
 				1A84DBA42967BE0200A9071E /* BaseViewController.swift in Sources */,
 				1A84DC06296D5EB100A9071E /* BannedContentCell.swift in Sources */,
+				1A65D602297005CF00DE1BCC /* PopupManager.swift in Sources */,
 				1AFE49C7296E62BC0096927C /* TextField.swift in Sources */,
+				1A65D5FE296FFA9F00DE1BCC /* PhotoSourceViewController.swift in Sources */,
 				1A84DB902966C2B800A9071E /* ParentalControlTabControllerViewController.swift in Sources */,
+				1A65D5EC296FAE8D00DE1BCC /* AvatarPickerViewController.swift in Sources */,
 				1A84DBAF2968048400A9071E /* PCUserCell.swift in Sources */,
 				1A84DBD1296C131F00A9071E /* Color.swift in Sources */,
 				1AFE49E5296EB6BF0096927C /* PCAssignedDeviceCell.swift in Sources */,
@@ -550,8 +632,10 @@
 				1A35327E296DEBA500C7003E /* UIImageView+TintRuntime.swift in Sources */,
 				1A84DBCE296BE81000A9071E /* UIView+Animation.swift in Sources */,
 				1A84DB992966CAA700A9071E /* UIImage+Resizable.swift in Sources */,
+				1A50789C297079F500E73E64 /* HeaderBarViewController.swift in Sources */,
 				1A84DBB8296BB25100A9071E /* UITableView+CellRegister.swift in Sources */,
 				1A84DB9B2966D1B300A9071E /* UINavigationBar+Style.swift in Sources */,
+				1A65D5F3296FCA5500DE1BCC /* AvatarCell.swift in Sources */,
 				1A84DBB229680DF200A9071E /* PCDevice.swift in Sources */,
 				1A84DB7C2966B3EC00A9071E /* AppDelegate.swift in Sources */,
 				1A353286296E4BFF00C7003E /* ParentalControlConstant.swift in Sources */,

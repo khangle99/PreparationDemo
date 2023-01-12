@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EditUserViewController: BaseViewController {
+class EditUserViewController: CustomHeightViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -59,7 +59,7 @@ class EditUserViewController: BaseViewController {
         collectionView.registerNib(of: AddMoreDeviceCell.self)
         collectionView.registerNib(of: UserProfileCell.self)
         collectionView.registerNib(of: UserNameTfCell.self)
-        collectionView.registerNib(of: AvatarCell.self)
+        collectionView.registerNib(of: AvatarHeaderCell.self)
         collectionView.registerNib(header: HeaderView.self)
         
         collectionView.delegate = self
@@ -86,11 +86,13 @@ extension EditUserViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
         case 0:
-            let avatarCell: AvatarCell = collectionView.dequeue(for: indexPath)
+            let avatarCell: AvatarHeaderCell = collectionView.dequeue(for: indexPath)
             avatarCell.configure(with: user.imgURLString != "" ? UIImage(named: user.imgURLString)! : UIImage(named: "quanly")!)
             
             avatarCell.onAvatarTapped = { [weak self] in
                 print("avatar tapped")
+                let vc = AvatarPickerViewController()
+                self?.navigationController?.pushViewController(vc, animated: true)
             }
             
             return avatarCell

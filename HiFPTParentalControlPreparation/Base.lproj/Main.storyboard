@@ -72,7 +72,7 @@
                                 <cells/>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OUf-aq-7rj">
-                                <rect key="frame" x="0.0" y="146" width="393" height="575"/>
+                                <rect key="frame" x="0.0" y="146" width="393" height="623"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.96078431369999995" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
@@ -83,7 +83,7 @@
                             <constraint firstItem="0xh-Ta-qkH" firstAttribute="bottom" secondItem="bOG-Si-ejr" secondAttribute="bottom" constant="-14" id="BSo-9u-hv7"/>
                             <constraint firstItem="0xh-Ta-qkH" firstAttribute="leading" secondItem="e6A-yR-xoF" secondAttribute="leading" constant="16" id="ELm-U1-CB6"/>
                             <constraint firstItem="4JA-Sw-bdx" firstAttribute="trailing" secondItem="OUf-aq-7rj" secondAttribute="trailing" id="FnE-Vp-66W"/>
-                            <constraint firstItem="4JA-Sw-bdx" firstAttribute="bottom" secondItem="OUf-aq-7rj" secondAttribute="bottom" constant="48" id="Gmn-HF-Ha9"/>
+                            <constraint firstItem="4JA-Sw-bdx" firstAttribute="bottom" secondItem="OUf-aq-7rj" secondAttribute="bottom" id="Gmn-HF-Ha9"/>
                             <constraint firstItem="4JA-Sw-bdx" firstAttribute="trailing" secondItem="bOG-Si-ejr" secondAttribute="trailing" id="Jqb-pr-H6P"/>
                             <constraint firstItem="bOG-Si-ejr" firstAttribute="leading" secondItem="e6A-yR-xoF" secondAttribute="leading" id="KH5-EE-zjl"/>
                             <constraint firstItem="OUf-aq-7rj" firstAttribute="leading" secondItem="e6A-yR-xoF" secondAttribute="leading" id="XLS-2X-Ogy"/>
@@ -140,7 +140,7 @@
                                 <state key="normal" image="setting"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-xd-a7r">
-                                <rect key="frame" x="0.0" y="146" width="393" height="575"/>
+                                <rect key="frame" x="0.0" y="146" width="393" height="623"/>
                                 <color key="backgroundColor" red="0.94509803921568625" green="0.96078431372549022" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
@@ -149,7 +149,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="X5p-Tb-7h0" secondAttribute="trailing" id="AeS-la-1Ng"/>
                             <constraint firstItem="X5p-Tb-7h0" firstAttribute="top" secondItem="NNP-s0-GBz" secondAttribute="top" id="B88-07-gx3"/>
-                            <constraint firstItem="YN9-S7-hE5" firstAttribute="bottom" secondItem="wGf-xd-a7r" secondAttribute="bottom" constant="48" id="JN3-ED-1gY"/>
+                            <constraint firstItem="YN9-S7-hE5" firstAttribute="bottom" secondItem="wGf-xd-a7r" secondAttribute="bottom" id="JN3-ED-1gY"/>
                             <constraint firstItem="JLk-RP-sgK" firstAttribute="leading" secondItem="5Jr-xb-Pzy" secondAttribute="trailing" constant="8" id="QlU-ap-bJW"/>
                             <constraint firstItem="YN9-S7-hE5" firstAttribute="trailing" secondItem="wGf-xd-a7r" secondAttribute="trailing" id="R3B-Iu-2t5"/>
                             <constraint firstItem="5Jr-xb-Pzy" firstAttribute="bottom" secondItem="X5p-Tb-7h0" secondAttribute="bottom" constant="-14" id="bRB-XX-VDE"/>

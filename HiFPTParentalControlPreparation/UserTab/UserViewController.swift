@@ -93,9 +93,10 @@ class UserViewController: BaseViewController {
     }
     
     private func setupUserListTableView() {
+        userListTableView.registerNib(of: PCUserCell.self)
         userListTableView.delegate = self
         userListTableView.dataSource = self
-        userListTableView.registerNib(of: PCUserCell.self)
+
         userListTableView.rowHeight = UITableView.automaticDimension
         //userListTableView.allowsSelection = false
         
@@ -108,9 +109,10 @@ class UserViewController: BaseViewController {
         cvLayout.itemSize = UICollectionViewFlowLayout.automaticSize
         filterCollectionView.backgroundColor = .clear
         filterCollectionView.showsHorizontalScrollIndicator = false
+        filterCollectionView.registerNib(of: FilterCell.self)
         filterCollectionView.delegate = self
         filterCollectionView.dataSource = self
-        filterCollectionView.registerNib(of: FilterCell.self)
+
     }
     
     @objc func refresh(sender: UIRefreshControl) {
@@ -150,6 +152,8 @@ extension UserViewController: UICollectionViewDelegate {
         if let newCell = collectionView.cellForItem(at: newIndex) as? FilterCell {
             newCell.configure(filterData: filterList[newIndex.item], isSelect: true)
         }
+        
+        userListTableView.scrollToRow(at: .init(row: 0, section: 0), at: .top, animated: false)
     }
 }
 

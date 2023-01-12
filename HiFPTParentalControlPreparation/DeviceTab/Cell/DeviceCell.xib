@@ -31,13 +31,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="W2i-hD-EFV">
                                 <rect key="frame" x="0.0" y="0.0" width="436" height="53"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BgX-I9-li0">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-p6-bw1" customClass="AvatarView" customModule="HiFPTParentalControlPreparation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="12.666666666666668" width="28" height="28.000000000000004"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="CZC-YX-GMs"/>
-                                            <constraint firstAttribute="width" constant="28" id="EA0-CW-wI0"/>
+                                            <constraint firstAttribute="width" constant="28" id="2nw-rX-01d"/>
+                                            <constraint firstAttribute="height" constant="28" id="SnJ-xb-snc"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="frg-Yu-1lx">
                                         <rect key="frame" x="44" y="0.0" width="360" height="53"/>
                                         <subviews>
@@ -116,7 +117,7 @@
             <connections>
                 <outlet property="assignBtn" destination="NQO-t4-5Rh" id="IPe-hV-WPO"/>
                 <outlet property="assigneeLbl" destination="Lex-fy-Q8m" id="c16-oh-bsO"/>
-                <outlet property="deviceImgView" destination="BgX-I9-li0" id="2pd-g9-dIb"/>
+                <outlet property="deviceAvatarImgView" destination="Hj7-p6-bw1" id="EG5-nq-zXl"/>
                 <outlet property="deviceNameLbl" destination="vKs-hD-smV" id="h2f-8u-e9T"/>
                 <outlet property="horizontalStackView" destination="W2i-hD-EFV" id="9eQ-IT-pmh"/>
                 <outlet property="macAddLbl" destination="34m-Mr-b45" id="Xz3-2T-IGY"/>

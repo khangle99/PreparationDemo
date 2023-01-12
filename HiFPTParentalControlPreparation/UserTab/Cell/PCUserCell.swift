@@ -9,22 +9,13 @@ import UIKit
 
 class PCUserCell: UITableViewCell {
 
-    @IBOutlet weak var avatarImg: UIImageView!
+    @IBOutlet weak var avatarView: AvatarView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var categoryLbl: UILabel!
     @IBOutlet weak var deviceCountLbl: UILabel!
     
     @IBOutlet weak var connectionButton: UIView!
     @IBOutlet weak var deleteUserButton: UIView!
-    
-    private lazy var onlineStatusLayer: CAShapeLayer = {
-        let c = CAShapeLayer()
-        c.path = UIBezierPath(ovalIn: .init(origin: .zero, size: .init(width: 10, height: 10))).cgPath
-        c.strokeColor = UIColor.white.cgColor
-        c.fillColor = UIColor.red.cgColor
-        layer.addSublayer(c)
-        return c
-    }()
     
     var onConnectTapped: ((_ user: PCUser) -> Void)?
     var onDeleteUserTapped: ((_ user: PCUser) -> Void)?
@@ -37,7 +28,7 @@ class PCUserCell: UITableViewCell {
     
     func configure(user: PCUser) {
         self.user = user
-        avatarImg.image = UIImage(named: user.imgURLString)
+        avatarView.avatarImage = UIImage(named: user.imgURLString)
         nameLbl.text = user.userName
         categoryLbl.text = "Phân loại: \(user.profile.title)"
         deviceCountLbl.text = "\(user.deviceCount) thiết bị"
@@ -46,19 +37,14 @@ class PCUserCell: UITableViewCell {
         connectionLabel.textColor = tintColor
         connectionImg.tintColor = tintColor
         connectionImg.image = user.isConnecting ? UIImage(named: "pause") : UIImage(named: "continue")
-        onlineStatusLayer.fillColor = user.isConnecting ? Colors.onlineGreen.cgColor : Colors.disableButton.cgColor
+        avatarView.statusColor = user.isConnecting ? Colors.onlineGreen : Colors.disableButton
         connectionLabel.text = user.isConnecting ? "Ngưng" : "Tiếp tục"
         
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        avatarImg.backgroundColor = .red
-        avatarImg.layer.cornerRadius = avatarImg.frame.height/2
-        
-        let avatarFrame = avatarImg.frame
-        onlineStatusLayer.frame = .init(origin: .init(x: avatarFrame.maxX - 10, y: avatarFrame.maxY - 10), size: .init(width: 10, height: 10))
-        
+        avatarView.imageCornerRadius = avatarView.frame.height / 2
     }
     
     override func awakeFromNib() {
