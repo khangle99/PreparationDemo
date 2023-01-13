@@ -13,7 +13,7 @@ class EditUserViewController: CustomHeightViewController {
     
     let isNewUserMode: Bool
     var user: PCUser
-    //var userDevices: [PCDevice] = MockData.getMockDevice()
+   
     var userDevices: [PCDevice] = []
     
     init(user: PCUser? = nil) {
@@ -22,8 +22,7 @@ class EditUserViewController: CustomHeightViewController {
             isNewUserMode = false
             self.user = user
         } else {
-            isNewUserMode = false
-            // gen new empty user
+            isNewUserMode = true
             // validate this empty user to hceck user filled
             self.user = PCUser(userId: "", profile: .init(id: "", title: ""), userName: "", deviceCount: 0, imgURLString: "", isConnecting: false)
         }
@@ -39,6 +38,10 @@ class EditUserViewController: CustomHeightViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = isNewUserMode ? "Thêm người dùng" : "Chỉnh sửa"
+        if !isNewUserMode {
+            userDevices = MockData.getMockDevice()
+            collectionView.reloadData()
+        }
         
         setupCollectionView()
         

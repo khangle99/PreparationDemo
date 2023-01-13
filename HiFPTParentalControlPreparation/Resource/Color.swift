@@ -11,6 +11,7 @@ import UIKit
 struct Colors {
     static let appPrimary = UIColor(rgb: 0x4564ED)
     static let disableButton = UIColor(rgb: 0xC7CBCF)
+    static let red = UIColor(rgb: 0xFF2A2A)
     static let orange = UIColor(rgb: 0xFF7E07)
     static let onlineGreen = UIColor(rgb: 0x00DA71)
     static let mainBlack = UIColor(rgb: 0x282828)

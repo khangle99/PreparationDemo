@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -28,13 +29,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zEd-Qf-6P2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zcR-Hh-IDX">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U0L-KY-nLl" customClass="AvatarView" customModule="HiFPTParentalControlPreparation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="38" width="28" height="28"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="1fv-pl-aKc"/>
-                                            <constraint firstAttribute="width" constant="28" id="YSb-FP-W2p"/>
+                                            <constraint firstAttribute="height" constant="28" id="Idd-dN-ZEJ"/>
+                                            <constraint firstAttribute="width" constant="28" id="d2i-3g-KDp"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JnM-B1-XIK">
                                         <rect key="frame" x="44" y="34" width="331" height="36"/>
                                         <subviews>
@@ -76,7 +78,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="bGF-e2-25L"/>
             <connections>
-                <outlet property="deviceImageView" destination="zcR-Hh-IDX" id="pgR-fI-L3y"/>
+                <outlet property="avatarView" destination="U0L-KY-nLl" id="5QD-ul-gC5"/>
                 <outlet property="deviceMacAddLbl" destination="epe-4j-6hV" id="qeo-Ub-Z0d"/>
                 <outlet property="deviceNameLbl" destination="q81-SF-pGF" id="eOq-53-K7q"/>
                 <outlet property="separator" destination="5Xd-vu-53u" id="Mxo-y0-Dut"/>
@@ -84,4 +86,9 @@
             <point key="canvasLocation" x="214.50381679389312" y="21.83098591549296"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

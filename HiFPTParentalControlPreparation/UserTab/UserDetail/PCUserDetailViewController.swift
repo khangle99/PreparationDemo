@@ -113,6 +113,10 @@ class PCUserDetailViewController: CustomHeightViewController {
     
     @objc func editTapped(sender: UIButton) {
         print("edit tapped")
+        if let user = self.user {
+            let vc = EditUserViewController(user: user)
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     // fake call api
