@@ -10,6 +10,7 @@ import UIKit
 class AvatarCell: UICollectionViewCell {
 
     @IBOutlet weak var avatarImgView: UIImageView!
+    @IBOutlet weak var checkImgView: UIImageView!
     
     func configure(with image: UIImage, isSelected: Bool) {
         avatarImgView.image = image
@@ -20,6 +21,7 @@ class AvatarCell: UICollectionViewCell {
         let uiColor = isSelected ? Colors.appPrimary : Colors.appPrimary.withAlphaComponent(0.3)
         layer.borderColor = uiColor.cgColor
         layer.borderWidth = isSelected ? 2 : 0.5
+        checkImgView.isHidden = !isSelected
     }
     
     override func awakeFromNib() {

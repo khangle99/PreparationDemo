@@ -20,20 +20,33 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x0p-t2-qdL">
                         <rect key="frame" x="0.0" y="0.0" width="333" height="213"/>
                     </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkCorner" translatesAutoresizingMaskIntoConstraints="NO" id="UH2-sp-PUX">
+                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="O43-g1-Dvx"/>
+                            <constraint firstAttribute="width" constant="36" id="YnT-xO-WOM"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="x0p-t2-qdL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nd5-1I-9ES"/>
                 <constraint firstAttribute="bottom" secondItem="x0p-t2-qdL" secondAttribute="bottom" id="a6W-Dw-rhK"/>
+                <constraint firstItem="UH2-sp-PUX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dwd-yC-gX7"/>
                 <constraint firstAttribute="trailing" secondItem="x0p-t2-qdL" secondAttribute="trailing" id="gcF-2Z-BMJ"/>
                 <constraint firstItem="x0p-t2-qdL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ggB-1j-bDw"/>
+                <constraint firstItem="UH2-sp-PUX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pth-cY-O2l"/>
             </constraints>
             <size key="customSize" width="333" height="213"/>
             <connections>
                 <outlet property="avatarImgView" destination="x0p-t2-qdL" id="cbq-ts-aRN"/>
+                <outlet property="checkImgView" destination="UH2-sp-PUX" id="YGM-9r-qWZ"/>
             </connections>
             <point key="canvasLocation" x="342.74809160305341" y="44.718309859154935"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="checkCorner" width="48" height="49"/>
+    </resources>
 </document>

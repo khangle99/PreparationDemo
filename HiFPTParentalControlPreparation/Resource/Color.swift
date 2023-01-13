@@ -20,4 +20,5 @@ struct Colors {
     static let line = UIColor(rgb: 0xEEEEEE)
     static let border = UIColor(rgb: 0xDDDDDD)
     static let lineBlue = UIColor(rgb: 0x89A7FE)
+    static let black = UIColor(rgb: 0x696969)
 }

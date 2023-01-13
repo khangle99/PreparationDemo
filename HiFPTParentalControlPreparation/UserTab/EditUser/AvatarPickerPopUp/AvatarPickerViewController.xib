@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="WeM-UH-GG5">
-                    <rect key="frame" x="0.0" y="59" width="393" height="679"/>
+                    <rect key="frame" x="0.0" y="75" width="393" height="663"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="mnw-48-TMi">
                         <size key="itemSize" width="128" height="128"/>
@@ -44,7 +44,7 @@
                 <constraint firstItem="8XS-oB-GkF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5lM-nF-M21"/>
                 <constraint firstItem="8XS-oB-GkF" firstAttribute="top" secondItem="WeM-UH-GG5" secondAttribute="bottom" id="DMU-Qm-CVw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8XS-oB-GkF" secondAttribute="trailing" id="LTy-R6-eNh"/>
-                <constraint firstItem="WeM-UH-GG5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="R9i-JQ-5B2"/>
+                <constraint firstItem="WeM-UH-GG5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="R9i-JQ-5B2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8XS-oB-GkF" secondAttribute="bottom" id="TSW-ba-JON"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WeM-UH-GG5" secondAttribute="trailing" id="Vr9-Ms-9MH"/>
                 <constraint firstItem="WeM-UH-GG5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tHw-61-LRW"/>

@@ -16,4 +16,8 @@ struct Font {
     static func semiBoldInter(of size: CGFloat) -> UIFont {
         return UIFont(name: "Inter-SemiBold", size: size) ?? .systemFont(ofSize: size)
     }
+    
+    static func regularInter(of size: CGFloat) -> UIFont {
+        return UIFont(name: "Inter-Regular", size: size) ?? .systemFont(ofSize: size)
+    }
 }

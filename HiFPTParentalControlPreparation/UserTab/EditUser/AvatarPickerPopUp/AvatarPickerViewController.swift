@@ -17,7 +17,7 @@ class AvatarPickerViewController: CustomHeightViewController {
         return defaultAvatarURLs + userAvatarURLs
     }
     
-    private var selectedIndex: Int? = 1
+    private var selectedIndex: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()

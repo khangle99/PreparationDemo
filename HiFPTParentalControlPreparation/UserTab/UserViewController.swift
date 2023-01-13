@@ -15,19 +15,19 @@ class UserViewController: BaseViewController {
     
     var userList: [PCUser] = [] {
         didSet {
-            var profiles: [PCProfile] = []
-            // extract profile
-            let group = Dictionary(grouping: userList, by: {$0.profile.id})
-            group.forEach { key, items in
-                
-            }
-            userList.map { $0.profile }.forEach { profile in
-                if !profiles.contains(where: {$0.title == profile.title} ) {
-                    profiles.append(profile)
-                }
-            }
-            
-            profileList = profiles
+//            var profiles: [PCProfile] = []
+//            // extract profile
+//            let group = Dictionary(grouping: userList, by: {$0.profile.id})
+//            group.forEach { key, items in
+//
+//            }
+//            userList.map { $0.profile }.forEach { profile in
+//                if !profiles.contains(where: {$0.title == profile.title} ) {
+//                    profiles.append(profile)
+//                }
+//            }
+//
+//            profileList = profiles
         }
     }
     
@@ -86,10 +86,13 @@ class UserViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userList = MockData.getMockUser()
+        profileList = MockData.getMockProfiles()
 
         setupProfileFilterCV()
         setupUserListTableView()
+        
         selectedFilterIndex = 0
+        userListTableView.reloadData()
     }
     
     private func setupUserListTableView() {
@@ -121,6 +124,7 @@ class UserViewController: BaseViewController {
             self.userList = MockData.getMockUser()
             self.refreshControl.endRefreshing()
             self.selectedFilterIndex = 0
+            self.filterCollectionView.reloadData()
             self.userListTableView.reloadData()
         }
     }
@@ -152,16 +156,31 @@ extension UserViewController: UICollectionViewDelegate {
         if let newCell = collectionView.cellForItem(at: newIndex) as? FilterCell {
             newCell.configure(filterData: filterList[newIndex.item], isSelect: true)
         }
-        
-        userListTableView.scrollToRow(at: .init(row: 0, section: 0), at: .top, animated: false)
+        let firstIndex = IndexPath(row: 0, section: 0)
+        if let _ = userListTableView.cellForRow(at: firstIndex) {
+            userListTableView.scrollToRow(at: firstIndex, at: .top, animated: false)
+        }
     }
 }
 
 // MARK: User tableview
 extension UserViewController: UITableViewDataSource {
     
+    private func invalidEmptyState() {
+        if filteredUserList.count == 0 {
+            let emptyView = EmptyView.initWith(description: "Chưa có người dùng nào")
+            userListTableView.backgroundView = emptyView
+        } else {
+            userListTableView.backgroundView = nil
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return filteredUserList.count
+        let count = filteredUserList.count
+        if count == 0 {
+            invalidEmptyState()
+        }
+        return count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -71,6 +71,7 @@ class DeviceViewController: BaseViewController {
             = MockData.getMockDevice()
             self.refreshControl.endRefreshing()
             self.selectedFilterIndex = 0 // reset to all
+            self.filterCollectionView.reloadData()
         }
     }
     
@@ -132,14 +133,31 @@ extension DeviceViewController: UICollectionViewDelegate {
             newCell.configure(filterData: .init(title: deviceStatus[newIndex.item], imgUrl: ""), isSelect: true)
         }
         
-        deviceListTableView.scrollToRow(at: .init(row: 0, section: 0), at: .top, animated: false)
+        let firstIndex = IndexPath(row: 0, section: 0)
+        if let _ = deviceListTableView.cellForRow(at: firstIndex) {
+            deviceListTableView.scrollToRow(at: firstIndex, at: .top, animated: false)
+        }
     }
 }
 
 // MARK: Device list
 extension DeviceViewController: UITableViewDataSource {
+    
+    private func invalidEmptyState() {
+        if filteredDeviceList.count == 0 {
+            let emptyView = EmptyView.initWith(description: "Chưa có thiết bị nào")
+            deviceListTableView.backgroundView = emptyView
+        } else {
+            deviceListTableView.backgroundView = nil
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return filteredDeviceList.count
+        let count = filteredDeviceList.count
+        if count == 0 {
+            invalidEmptyState()
+        }
+        return count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

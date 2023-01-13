@@ -26,11 +26,7 @@ struct PCProfile {
 
 final class MockData {
     class func getMockUser() -> [PCUser] {
-        let profiles: [PCProfile] = [
-            .init(id: "ad1", title: "Người lớn", imageURLString: "adult"),
-            .init(id: "child",title: "Trẻ em", imageURLString: "children"),
-            .init(id: "ad", title: "Quản lý", imageURLString: "quanly")
-        ]
+        let profiles: [PCProfile] = getMockProfiles()
         
         return [
             .init(userId: "uid1", profile: profiles[0], userName: "Nguyễn Trần Trung Quân Idol", deviceCount: 3, imgURLString: "sampleAvatar", isConnecting: true),
@@ -45,11 +41,20 @@ final class MockData {
     class func getMockDevice() -> [PCDevice] {
         return [
             .init(deviceName: "Sam ZFold3", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
-            .init(deviceName: "Mac15", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone", assigneeId: "someUserId"),
-            .init(deviceName: "Vivobook", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone", assigneeId: "someUserId2"),
+            .init(deviceName: "Mac15", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
+            .init(deviceName: "Vivobook", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
             .init(deviceName: "Iphone8", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
-            .init(deviceName: "S22 Ultra", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone", assigneeId: "someUserId4"),
+            .init(deviceName: "S22 Ultra", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
             .init(deviceName: "Thinkpad", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
+        ]
+    }
+    
+    class func getMockProfiles() -> [PCProfile] {
+        return [
+            .init(id: "ad1", title: "Người lớn", imageURLString: "adult"),
+            .init(id: "child",title: "Trẻ em", imageURLString: "children"),
+            .init(id: "ad", title: "Quản lý", imageURLString: "quanly"),
+            .init(id: "empty", title: "Empty", imageURLString: "student")
         ]
     }
 }

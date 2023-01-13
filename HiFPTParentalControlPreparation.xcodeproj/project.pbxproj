@@ -14,6 +14,7 @@
 		1A50789C297079F500E73E64 /* HeaderBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A50789B297079F500E73E64 /* HeaderBarViewController.swift */; };
 		1A50789F297080A600E73E64 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A50789D297080A600E73E64 /* UserInfoCell.swift */; };
 		1A5078A0297080A600E73E64 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A50789E297080A600E73E64 /* UserInfoCell.xib */; };
+		1A5078A22970EB5D00E73E64 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5078A12970EB5D00E73E64 /* EmptyView.swift */; };
 		1A65D5D7296EB8F000DE1BCC /* AddMoreDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5D5296EB8F000DE1BCC /* AddMoreDeviceCell.swift */; };
 		1A65D5D8296EB8F000DE1BCC /* AddMoreDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5D6296EB8F000DE1BCC /* AddMoreDeviceCell.xib */; };
 		1A65D5DB296EBA7B00DE1BCC /* UserProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5D9296EBA7B00DE1BCC /* UserProfileCell.swift */; };
@@ -94,6 +95,7 @@
 		1A50789B297079F500E73E64 /* HeaderBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBarViewController.swift; sourceTree = "<group>"; };
 		1A50789D297080A600E73E64 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
 		1A50789E297080A600E73E64 /* UserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
+		1A5078A12970EB5D00E73E64 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		1A65D5D5296EB8F000DE1BCC /* AddMoreDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoreDeviceCell.swift; sourceTree = "<group>"; };
 		1A65D5D6296EB8F000DE1BCC /* AddMoreDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMoreDeviceCell.xib; sourceTree = "<group>"; };
 		1A65D5D9296EBA7B00DE1BCC /* UserProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCell.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				1A84DBFF296CF5DE00A9071E /* AvatarView.swift */,
 				1AFE49C6296E62BC0096927C /* TextField.swift */,
 				1A65D5F5296FCB7300DE1BCC /* CheckedLayer.swift */,
+				1A5078A12970EB5D00E73E64 /* EmptyView.swift */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				1A353286296E4BFF00C7003E /* ParentalControlConstant.swift in Sources */,
 				1A84DB7E2966B3EC00A9071E /* SceneDelegate.swift in Sources */,
 				1A65D5DF296EBBCB00DE1BCC /* UserNameTfCell.swift in Sources */,
+				1A5078A22970EB5D00E73E64 /* EmptyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
