@@ -9,6 +9,7 @@ import UIKit
 
 class EditUserViewController: CustomHeightViewController {
     
+   
     @IBOutlet weak var collectionView: UICollectionView!
     
     let isNewUserMode: Bool
@@ -16,6 +17,7 @@ class EditUserViewController: CustomHeightViewController {
    
     var userDevices: [PCDevice] = []
     
+    @IBOutlet weak var updateBtn: UIButton!
     init(user: PCUser? = nil) {
         
         if let user = user {
@@ -37,6 +39,7 @@ class EditUserViewController: CustomHeightViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateBtn.setTitle(isNewUserMode ? "Tạo" : "Cập nhật", for: .normal)
         title = isNewUserMode ? "Thêm người dùng" : "Chỉnh sửa"
         if !isNewUserMode {
             userDevices = MockData.getMockDevice()
@@ -70,6 +73,9 @@ class EditUserViewController: CustomHeightViewController {
 
     }
 
+    @IBAction func updateTapped(_ sender: Any) {
+        print("update tapped")
+    }
 }
 
 extension EditUserViewController: UICollectionViewDataSource {
@@ -130,7 +136,7 @@ extension EditUserViewController: UICollectionViewDataSource {
                 
                 deviceCell.configure(with: userDevices[indexPath.item])
                 deviceCell.onRemoveTapped = { [weak self] device in
-                    
+                    self?.view.makeToast("show delete popup", duration: 1.0, position: .bottom)
                     print("tapped device \(device.deviceName)")
                 }
                 

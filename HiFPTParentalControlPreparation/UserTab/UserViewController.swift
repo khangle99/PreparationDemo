@@ -177,9 +177,7 @@ extension UserViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         let count = filteredUserList.count
-        if count == 0 {
-            invalidEmptyState()
-        }
+        invalidEmptyState()
         return count
     }
     

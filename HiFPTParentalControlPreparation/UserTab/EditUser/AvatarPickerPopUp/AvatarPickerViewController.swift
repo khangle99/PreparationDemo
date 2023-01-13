@@ -11,8 +11,10 @@ class AvatarPickerViewController: CustomHeightViewController {
 
     @IBOutlet weak var avatarCollectionView: UICollectionView!
     
+    var avatarURLCompletion: ((String) -> Void)?
+    
     let defaultAvatarURLs: [String] = ["avatar-01", "avatar-02", "avatar-03", "avatar-04", "avatar-05", "avatar-06", "avatar-07", "avatar-08"]
-    var userAvatarURLs: [String] = ["quanly"]
+    var userAvatarURLs: [String] = ["quanly", "quanly", "quanly"]
     var totalAvatarURL: [String] {
         return defaultAvatarURLs + userAvatarURLs
     }
@@ -36,6 +38,15 @@ class AvatarPickerViewController: CustomHeightViewController {
         avatarCollectionView.dataSource = self
         
     }
+    @IBAction func doneTapped(_ sender: Any) {
+        print("done tapped")
+        // api upload avatar to server
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.avatarURLCompletion?("sampleAvatar") // mock url
+        }
+      
+    }
 }
 
 // MARK: Datasource
@@ -53,7 +64,11 @@ extension AvatarPickerViewController: UICollectionViewDataSource {
         switch indexPath.section {
         case 0:
             let avatarCell: AvatarCell = collectionView.dequeue(for: indexPath)
-            avatarCell.configure(with: UIImage(named: totalAvatarURL[indexPath.item])!, isSelected: selectedIndex == indexPath.item)
+            let isUserUploadImage = indexPath.item >= defaultAvatarURLs.count
+            avatarCell.configure(with: UIImage(named: totalAvatarURL[indexPath.item])!, isSelected: selectedIndex == indexPath.item, isUserImage: isUserUploadImage)
+            avatarCell.onRemoveTapped = { [weak self] in
+                print("remove at \(indexPath.item)")
+            }
             return avatarCell
         case 1:
             let uploadCell: UploadSelectCell = collectionView.dequeue(for: indexPath)
@@ -117,7 +132,11 @@ extension AvatarPickerViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.section == 1 {
             print("tap upload")
-            
+            let vc = PhotoSourceViewController()
+            vc.delegate = self
+            vc.modalPresentationStyle = .overFullScreen
+            vc.modalTransitionStyle = .crossDissolve
+            present(vc, animated: true)
         } else {
             print(indexPath.item)
             if let oldIndex = self.selectedIndex, let oldCell = collectionView.cellForItem(at: .init(item: oldIndex, section: 0)) as? AvatarCell {
@@ -130,6 +149,14 @@ extension AvatarPickerViewController: UICollectionViewDelegate {
            
             selectedIndex = indexPath.item
         }
+    }
+}
+
+extension AvatarPickerViewController: PhotoSourceViewControllerDelegate {
+    func didSelectImage(image: UIImage) {
+        // reload section
+        userAvatarURLs.append("quanly")
+        avatarCollectionView.reloadData()
     }
 }
 
