@@ -9,6 +9,7 @@ import UIKit
 
 class PCUserDetailViewController: CustomHeightViewController {
 
+    var isAdvanced: Bool = true
 
     @IBOutlet weak var userDetailTbv: UITableView!
     
@@ -59,6 +60,8 @@ class PCUserDetailViewController: CustomHeightViewController {
         userDetailTbv.registerNib(of: UserInfoCell.self)
         userDetailTbv.registerNib(of: BannedContentCell.self)
         userDetailTbv.registerNib(of: UserDeviceCell.self)
+        userDetailTbv.registerNib(of: ChartInfoCell.self)
+        userDetailTbv.registerNib(of: TimeLimitCell.self)
         userDetailTbv.tableHeaderView =
         UIView(frame: CGRect(x: 0, y: 0, width: userDetailTbv.frame.width, height: CGFloat.leastNormalMagnitude))
         userDetailTbv.tableFooterView =
@@ -121,23 +124,18 @@ class PCUserDetailViewController: CustomHeightViewController {
     
     // fake call api
     private func mockData(user: PCUser) {
+        self.deviceList = [
+            .init(deviceName: "Sam ZFold3", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
+            .init(deviceName: "Vivobook", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone", assigneeId: "someUserId2"),
+            .init(deviceName: "Iphone8", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
+            .init(deviceName: "Thinkpad", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
+        ]
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.deviceList = [
-                .init(deviceName: "Sam ZFold3", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
-                .init(deviceName: "Vivobook", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone", assigneeId: "someUserId2"),
-                .init(deviceName: "Iphone8", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
-                .init(deviceName: "Thinkpad", macAddress: "MAC: 012-87-27-WW-2758", imageURLStr: "phone"),
-            ]
-            
-            self.bannedContent = [
-                .init(id: "id1", name: "Gambling", imgURL: "gambling"),
-                .init(id: "id2", name: "Porn", imgURL: "p*rn"),
-                .init(id: "id3", name: "Ad Block", imgURL: "adblock"),
-            ]
-            self.userDetailTbv.reloadData()
-        }
-        
+        self.bannedContent = [
+            .init(id: "id1", name: "Gambling", imgURL: "gambling"),
+            .init(id: "id2", name: "Porn", imgURL: "p*rn"),
+            .init(id: "id3", name: "Ad Block", imgURL: "adblock"),
+        ]
     }
 
 }
@@ -145,41 +143,91 @@ class PCUserDetailViewController: CustomHeightViewController {
 extension PCUserDetailViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return isAdvanced ? 4 : 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return 1
-        case 1:
-            return deviceList.count
-        case 2:
-            return bannedContent.count
-        default:
-            return 0
+        
+        if isAdvanced {
+            switch section {
+            case 0:
+                return 2
+            case 1:
+                return deviceList.count
+            case 2:
+                return 1
+            case 3:
+                return bannedContent.count
+            default:
+                return 0
+            }
+        } else {
+            switch section {
+            case 0:
+                return 1
+            case 1:
+                return deviceList.count
+            case 2:
+                return bannedContent.count
+            default:
+                return 0
+            }
         }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.section {
-        case 0:
-            let cell: UserInfoCell = tableView.dequeue(for: indexPath)
-            if let user = self.user {
-                cell.configure(user: user)
+        if isAdvanced {
+            switch indexPath.section {
+            case 0:
+                if indexPath.row == 0 { // header
+                    let cell: UserInfoCell = tableView.dequeue(for: indexPath)
+                    if let user = self.user {
+                        cell.configure(user: user)
+                    }
+                    return cell
+                } else { // chart
+                    let cell: ChartInfoCell = tableView.dequeue(for: indexPath)
+                    cell.configure(with: 4)
+                    return cell
+                }
+               
+            case 1:
+                let cell: UserDeviceCell = tableView.dequeue(for: indexPath)
+                cell.configure(device: deviceList[indexPath.row])
+                return cell
+            case 2:
+                let cell: TimeLimitCell = tableView.dequeue(for: indexPath)
+                return cell
+            case 3:
+                let cell: BannedContentCell = tableView.dequeue(for: indexPath)
+                cell.configure(bannedContent[indexPath.row])
+                return cell
+            
+            default:
+                return .init()
             }
-            return cell
-        case 1:
-            let cell: UserDeviceCell = tableView.dequeue(for: indexPath)
-            cell.configure(device: deviceList[indexPath.row])
-            return cell
-        case 2:
-            let cell: BannedContentCell = tableView.dequeue(for: indexPath)
-            cell.configure(bannedContent[indexPath.row])
-            return cell
-        default:
-            return .init()
+        } else {
+            switch indexPath.section {
+            case 0:
+                let cell: UserInfoCell = tableView.dequeue(for: indexPath)
+                if let user = self.user {
+                    cell.configure(user: user)
+                }
+                return cell
+            case 1:
+                let cell: UserDeviceCell = tableView.dequeue(for: indexPath)
+                cell.configure(device: deviceList[indexPath.row])
+                return cell
+            case 2:
+                let cell: BannedContentCell = tableView.dequeue(for: indexPath)
+                cell.configure(bannedContent[indexPath.row])
+                return cell
+            default:
+                return .init()
+            }
         }
+        
     }
     
     
@@ -196,18 +244,36 @@ extension PCUserDetailViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return indexPath.section == 0 ? 72 : UITableView.automaticDimension
+        if indexPath.section == 0 {
+            return indexPath.row == 0  ? 72 : 700
+        } else {
+            return UITableView.automaticDimension
+        }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        switch section {
-        case 1:
-            return createHeaderView(label: "Thiết bị đã gắn", tableView: tableView)
-        case 2:
-            return createHeaderView(label: "Nội dung chặn", tableView: tableView)
-        default:
-            return nil
+        if isAdvanced {
+            switch section {
+            case 1:
+                return createHeaderView(label: "Thiết bị đã gắn", tableView: tableView)
+            case 2:
+                return createHeaderView(label: "Giới hạn thời gian", tableView: tableView)
+            case 3:
+                return createHeaderView(label: "Nội dung chặn", tableView: tableView)
+            default:
+                return nil
+            }
+        } else {
+            switch section {
+            case 1:
+                return createHeaderView(label: "Thiết bị đã gắn", tableView: tableView)
+            case 2:
+                return createHeaderView(label: "Nội dung chặn", tableView: tableView)
+            default:
+                return nil
+            }
         }
+       
     }
     
     func createHeaderView(label str: String, tableView: UITableView) -> UIView {

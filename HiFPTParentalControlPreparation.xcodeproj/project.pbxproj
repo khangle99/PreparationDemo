@@ -35,6 +35,42 @@
 		1A65D5FE296FFA9F00DE1BCC /* PhotoSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D5FC296FFA9F00DE1BCC /* PhotoSourceViewController.swift */; };
 		1A65D5FF296FFA9F00DE1BCC /* PhotoSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A65D5FD296FFA9F00DE1BCC /* PhotoSourceViewController.xib */; };
 		1A65D602297005CF00DE1BCC /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D601297005CF00DE1BCC /* PopupManager.swift */; };
+		1A837D79297466CD005ADD7C /* ChartInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D77297466CD005ADD7C /* ChartInfoCell.swift */; };
+		1A837D7A297466CD005ADD7C /* ChartInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A837D78297466CD005ADD7C /* ChartInfoCell.xib */; };
+		1A837D7D2974673A005ADD7C /* TimeLimitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D7B2974673A005ADD7C /* TimeLimitCell.swift */; };
+		1A837D7E2974673A005ADD7C /* TimeLimitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A837D7C2974673A005ADD7C /* TimeLimitCell.xib */; };
+		1A837DA92974691A005ADD7C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D812974691A005ADD7C /* CircularProgressView.swift */; };
+		1A837DAA2974691A005ADD7C /* FLBarPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D842974691A005ADD7C /* FLBarPlotView.swift */; };
+		1A837DAB2974691A005ADD7C /* FLPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D852974691A005ADD7C /* FLPlotView.swift */; };
+		1A837DAC2974691A005ADD7C /* FLChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D862974691A005ADD7C /* FLChart.swift */; };
+		1A837DAD2974691A005ADD7C /* FLStylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D892974691A005ADD7C /* FLStylable.swift */; };
+		1A837DAE2974691A005ADD7C /* FLAxesLineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D8A2974691A005ADD7C /* FLAxesLineConfig.swift */; };
+		1A837DAF2974691A005ADD7C /* FLDashedLineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D8B2974691A005ADD7C /* FLDashedLineConfig.swift */; };
+		1A837DB02974691A005ADD7C /* FLBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D8C2974691A005ADD7C /* FLBarConfig.swift */; };
+		1A837DB12974691A005ADD7C /* FLTickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D8D2974691A005ADD7C /* FLTickConfig.swift */; };
+		1A837DB22974691A005ADD7C /* FLChartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D8E2974691A005ADD7C /* FLChartConfig.swift */; };
+		1A837DB32974691A005ADD7C /* FLAxesLabelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D8F2974691A005ADD7C /* FLAxesLabelConfig.swift */; };
+		1A837DB42974691A005ADD7C /* FLChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D902974691A005ADD7C /* FLChartData.swift */; };
+		1A837DB52974691A005ADD7C /* FLDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D912974691A005ADD7C /* FLDataSet.swift */; };
+		1A837DB62974691A005ADD7C /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D922974691A005ADD7C /* Key.swift */; };
+		1A837DB72974691A005ADD7C /* PlotableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D932974691A005ADD7C /* PlotableData.swift */; };
+		1A837DB82974691A005ADD7C /* UnclippedTopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D942974691A005ADD7C /* UnclippedTopCollectionView.swift */; };
+		1A837DB92974691A005ADD7C /* BarHighlightedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D962974691A005ADD7C /* BarHighlightedView.swift */; };
+		1A837DBA2974691A005ADD7C /* ChartHighlightingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D972974691A005ADD7C /* ChartHighlightingDelegate.swift */; };
+		1A837DBB2974691A005ADD7C /* HighlightedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D982974691A005ADD7C /* HighlightedView.swift */; };
+		1A837DBC2974691A005ADD7C /* BarFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D992974691A005ADD7C /* BarFocusView.swift */; };
+		1A837DBD2974691A005ADD7C /* FLCartesianPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D9A2974691A005ADD7C /* FLCartesianPlane.swift */; };
+		1A837DBE2974691A005ADD7C /* HighlightingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D9B2974691A005ADD7C /* HighlightingCollectionView.swift */; };
+		1A837DBF2974691A005ADD7C /* ChartBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D9D2974691A005ADD7C /* ChartBar.swift */; };
+		1A837DC02974691A005ADD7C /* FLChartBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D9E2974691A005ADD7C /* FLChartBarCell.swift */; };
+		1A837DC12974691A005ADD7C /* FLPlainChartBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837D9F2974691A005ADD7C /* FLPlainChartBar.swift */; };
+		1A837DC22974691A005ADD7C /* FLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837DA12974691A005ADD7C /* FLColor.swift */; };
+		1A837DC32974691A005ADD7C /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837DA32974691A005ADD7C /* Label.swift */; };
+		1A837DC42974691A005ADD7C /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837DA42974691A005ADD7C /* Labels.swift */; };
+		1A837DC52974691A005ADD7C /* Chart+XT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837DA52974691A005ADD7C /* Chart+XT.swift */; };
+		1A837DC62974691A005ADD7C /* NSLayoutConstraint+XT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837DA62974691A005ADD7C /* NSLayoutConstraint+XT.swift */; };
+		1A837DC72974691A005ADD7C /* CAAnimationBlockCallbackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837DA72974691A005ADD7C /* CAAnimationBlockCallbackDelegate.swift */; };
+		1A837DC82974691A005ADD7C /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A837DA82974691A005ADD7C /* Formatters.swift */; };
 		1A84DB7C2966B3EC00A9071E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7B2966B3EC00A9071E /* AppDelegate.swift */; };
 		1A84DB7E2966B3EC00A9071E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7D2966B3EC00A9071E /* SceneDelegate.swift */; };
 		1A84DB802966B3EC00A9071E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84DB7F2966B3EC00A9071E /* ViewController.swift */; };
@@ -116,6 +152,42 @@
 		1A65D5FC296FFA9F00DE1BCC /* PhotoSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSourceViewController.swift; sourceTree = "<group>"; };
 		1A65D5FD296FFA9F00DE1BCC /* PhotoSourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSourceViewController.xib; sourceTree = "<group>"; };
 		1A65D601297005CF00DE1BCC /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
+		1A837D77297466CD005ADD7C /* ChartInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartInfoCell.swift; sourceTree = "<group>"; };
+		1A837D78297466CD005ADD7C /* ChartInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartInfoCell.xib; sourceTree = "<group>"; };
+		1A837D7B2974673A005ADD7C /* TimeLimitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLimitCell.swift; sourceTree = "<group>"; };
+		1A837D7C2974673A005ADD7C /* TimeLimitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLimitCell.xib; sourceTree = "<group>"; };
+		1A837D812974691A005ADD7C /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		1A837D842974691A005ADD7C /* FLBarPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLBarPlotView.swift; sourceTree = "<group>"; };
+		1A837D852974691A005ADD7C /* FLPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLPlotView.swift; sourceTree = "<group>"; };
+		1A837D862974691A005ADD7C /* FLChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLChart.swift; sourceTree = "<group>"; };
+		1A837D892974691A005ADD7C /* FLStylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLStylable.swift; sourceTree = "<group>"; };
+		1A837D8A2974691A005ADD7C /* FLAxesLineConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLAxesLineConfig.swift; sourceTree = "<group>"; };
+		1A837D8B2974691A005ADD7C /* FLDashedLineConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLDashedLineConfig.swift; sourceTree = "<group>"; };
+		1A837D8C2974691A005ADD7C /* FLBarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLBarConfig.swift; sourceTree = "<group>"; };
+		1A837D8D2974691A005ADD7C /* FLTickConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLTickConfig.swift; sourceTree = "<group>"; };
+		1A837D8E2974691A005ADD7C /* FLChartConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLChartConfig.swift; sourceTree = "<group>"; };
+		1A837D8F2974691A005ADD7C /* FLAxesLabelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLAxesLabelConfig.swift; sourceTree = "<group>"; };
+		1A837D902974691A005ADD7C /* FLChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLChartData.swift; sourceTree = "<group>"; };
+		1A837D912974691A005ADD7C /* FLDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLDataSet.swift; sourceTree = "<group>"; };
+		1A837D922974691A005ADD7C /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		1A837D932974691A005ADD7C /* PlotableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotableData.swift; sourceTree = "<group>"; };
+		1A837D942974691A005ADD7C /* UnclippedTopCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnclippedTopCollectionView.swift; sourceTree = "<group>"; };
+		1A837D962974691A005ADD7C /* BarHighlightedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarHighlightedView.swift; sourceTree = "<group>"; };
+		1A837D972974691A005ADD7C /* ChartHighlightingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartHighlightingDelegate.swift; sourceTree = "<group>"; };
+		1A837D982974691A005ADD7C /* HighlightedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightedView.swift; sourceTree = "<group>"; };
+		1A837D992974691A005ADD7C /* BarFocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarFocusView.swift; sourceTree = "<group>"; };
+		1A837D9A2974691A005ADD7C /* FLCartesianPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLCartesianPlane.swift; sourceTree = "<group>"; };
+		1A837D9B2974691A005ADD7C /* HighlightingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightingCollectionView.swift; sourceTree = "<group>"; };
+		1A837D9D2974691A005ADD7C /* ChartBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartBar.swift; sourceTree = "<group>"; };
+		1A837D9E2974691A005ADD7C /* FLChartBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLChartBarCell.swift; sourceTree = "<group>"; };
+		1A837D9F2974691A005ADD7C /* FLPlainChartBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLPlainChartBar.swift; sourceTree = "<group>"; };
+		1A837DA12974691A005ADD7C /* FLColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLColor.swift; sourceTree = "<group>"; };
+		1A837DA32974691A005ADD7C /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		1A837DA42974691A005ADD7C /* Labels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		1A837DA52974691A005ADD7C /* Chart+XT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Chart+XT.swift"; sourceTree = "<group>"; };
+		1A837DA62974691A005ADD7C /* NSLayoutConstraint+XT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+XT.swift"; sourceTree = "<group>"; };
+		1A837DA72974691A005ADD7C /* CAAnimationBlockCallbackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAnimationBlockCallbackDelegate.swift; sourceTree = "<group>"; };
+		1A837DA82974691A005ADD7C /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		1A84DB782966B3EC00A9071E /* HiFPTParentalControlPreparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFPTParentalControlPreparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A84DB7B2966B3EC00A9071E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A84DB7D2966B3EC00A9071E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +304,117 @@
 				1A65D601297005CF00DE1BCC /* PopupManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		1A837D7F2974690E005ADD7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A837D822974691A005ADD7C /* BarChart */,
+				1A837D802974691A005ADD7C /* CircularProgressView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A837D802974691A005ADD7C /* CircularProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				1A837D812974691A005ADD7C /* CircularProgressView.swift */,
+			);
+			path = CircularProgressView;
+			sourceTree = "<group>";
+		};
+		1A837D822974691A005ADD7C /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				1A837D832974691A005ADD7C /* PlotView */,
+				1A837D862974691A005ADD7C /* FLChart.swift */,
+				1A837D872974691A005ADD7C /* Models */,
+				1A837D942974691A005ADD7C /* UnclippedTopCollectionView.swift */,
+				1A837D952974691A005ADD7C /* HighlightView */,
+				1A837D9A2974691A005ADD7C /* FLCartesianPlane.swift */,
+				1A837D9B2974691A005ADD7C /* HighlightingCollectionView.swift */,
+				1A837D9C2974691A005ADD7C /* Bar */,
+				1A837DA02974691A005ADD7C /* Helpers */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		1A837D832974691A005ADD7C /* PlotView */ = {
+			isa = PBXGroup;
+			children = (
+				1A837D842974691A005ADD7C /* FLBarPlotView.swift */,
+				1A837D852974691A005ADD7C /* FLPlotView.swift */,
+			);
+			path = PlotView;
+			sourceTree = "<group>";
+		};
+		1A837D872974691A005ADD7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A837D882974691A005ADD7C /* Configurations */,
+				1A837D902974691A005ADD7C /* FLChartData.swift */,
+				1A837D912974691A005ADD7C /* FLDataSet.swift */,
+				1A837D922974691A005ADD7C /* Key.swift */,
+				1A837D932974691A005ADD7C /* PlotableData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A837D882974691A005ADD7C /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				1A837D892974691A005ADD7C /* FLStylable.swift */,
+				1A837D8A2974691A005ADD7C /* FLAxesLineConfig.swift */,
+				1A837D8B2974691A005ADD7C /* FLDashedLineConfig.swift */,
+				1A837D8C2974691A005ADD7C /* FLBarConfig.swift */,
+				1A837D8D2974691A005ADD7C /* FLTickConfig.swift */,
+				1A837D8E2974691A005ADD7C /* FLChartConfig.swift */,
+				1A837D8F2974691A005ADD7C /* FLAxesLabelConfig.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		1A837D952974691A005ADD7C /* HighlightView */ = {
+			isa = PBXGroup;
+			children = (
+				1A837D962974691A005ADD7C /* BarHighlightedView.swift */,
+				1A837D972974691A005ADD7C /* ChartHighlightingDelegate.swift */,
+				1A837D982974691A005ADD7C /* HighlightedView.swift */,
+				1A837D992974691A005ADD7C /* BarFocusView.swift */,
+			);
+			path = HighlightView;
+			sourceTree = "<group>";
+		};
+		1A837D9C2974691A005ADD7C /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				1A837D9D2974691A005ADD7C /* ChartBar.swift */,
+				1A837D9E2974691A005ADD7C /* FLChartBarCell.swift */,
+				1A837D9F2974691A005ADD7C /* FLPlainChartBar.swift */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
+		1A837DA02974691A005ADD7C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1A837DA12974691A005ADD7C /* FLColor.swift */,
+				1A837DA22974691A005ADD7C /* Labels */,
+				1A837DA52974691A005ADD7C /* Chart+XT.swift */,
+				1A837DA62974691A005ADD7C /* NSLayoutConstraint+XT.swift */,
+				1A837DA72974691A005ADD7C /* CAAnimationBlockCallbackDelegate.swift */,
+				1A837DA82974691A005ADD7C /* Formatters.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1A837DA22974691A005ADD7C /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				1A837DA32974691A005ADD7C /* Label.swift */,
+				1A837DA42974691A005ADD7C /* Labels.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 		1A84DB6F2966B3EB00A9071E = {
@@ -391,6 +574,7 @@
 		1A84DBFA296CF2BD00A9071E /* UserDetail */ = {
 			isa = PBXGroup;
 			children = (
+				1A837D7F2974690E005ADD7C /* View */,
 				1A84DC03296D5E8600A9071E /* Cell */,
 				1A84DBFB296CF2EC00A9071E /* PCUserDetailViewController.swift */,
 				1A84DBFC296CF2EC00A9071E /* PCUserDetailViewController.xib */,
@@ -408,6 +592,10 @@
 				1A353279296D77E000C7003E /* UserDetailSecionHeaderView.swift */,
 				1A50789D297080A600E73E64 /* UserInfoCell.swift */,
 				1A50789E297080A600E73E64 /* UserInfoCell.xib */,
+				1A837D77297466CD005ADD7C /* ChartInfoCell.swift */,
+				1A837D78297466CD005ADD7C /* ChartInfoCell.xib */,
+				1A837D7B2974673A005ADD7C /* TimeLimitCell.swift */,
+				1A837D7C2974673A005ADD7C /* TimeLimitCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -532,6 +720,7 @@
 				1A84DBCB296BDD4D00A9071E /* Inter-Black.ttf in Resources */,
 				1A84DB852966B3ED00A9071E /* Assets.xcassets in Resources */,
 				1A84DC0D296D6AC500A9071E /* UserDeviceCell.xib in Resources */,
+				1A837D7E2974673A005ADD7C /* TimeLimitCell.xib in Resources */,
 				1A65D5E0296EBBCB00DE1BCC /* UserNameTfCell.xib in Resources */,
 				1A84DB832966B3EC00A9071E /* Main.storyboard in Resources */,
 				1A65D5E4296EBCAB00DE1BCC /* AvatarHeaderCell.xib in Resources */,
@@ -539,6 +728,7 @@
 				1A65D5DC296EBA7B00DE1BCC /* UserProfileCell.xib in Resources */,
 				1A65D5F4296FCA5500DE1BCC /* AvatarCell.xib in Resources */,
 				1A84DC07296D5EB100A9071E /* BannedContentCell.xib in Resources */,
+				1A837D7A297466CD005ADD7C /* ChartInfoCell.xib in Resources */,
 				1A84DBC8296BDD4C00A9071E /* Inter-SemiBold.ttf in Resources */,
 				1A84DBC9296BDD4D00A9071E /* Inter-Medium.ttf in Resources */,
 				1A84DBC5296BDD4C00A9071E /* Inter-Light.ttf in Resources */,
@@ -601,49 +791,83 @@
 				1A35327A296D77E000C7003E /* UserDetailSecionHeaderView.swift in Sources */,
 				1A84DBB6296BAB1800A9071E /* UICollectionView+CellRegister.swift in Sources */,
 				1A84DB802966B3EC00A9071E /* ViewController.swift in Sources */,
+				1A837DBE2974691A005ADD7C /* HighlightingCollectionView.swift in Sources */,
+				1A837DB02974691A005ADD7C /* FLBarConfig.swift in Sources */,
 				1A84DBFD296CF2EC00A9071E /* PCUserDetailViewController.swift in Sources */,
 				1A65D5F9296FE0FF00DE1BCC /* UploadSelectCell.swift in Sources */,
 				1A84DBF9296C788400A9071E /* Font.swift in Sources */,
+				1A837DBF2974691A005ADD7C /* ChartBar.swift in Sources */,
+				1A837DC02974691A005ADD7C /* FLChartBarCell.swift in Sources */,
+				1A837DC42974691A005ADD7C /* Labels.swift in Sources */,
+				1A837DBA2974691A005ADD7C /* ChartHighlightingDelegate.swift in Sources */,
 				1A35327C296DE7BF00C7003E /* CALayer+BorderColorNib.swift in Sources */,
 				1A84DB9F2966E21300A9071E /* UIColor+RGB.swift in Sources */,
 				1A65D5F6296FCB7300DE1BCC /* CheckedLayer.swift in Sources */,
+				1A837DBD2974691A005ADD7C /* FLCartesianPlane.swift in Sources */,
+				1A837DAE2974691A005ADD7C /* FLAxesLineConfig.swift in Sources */,
+				1A837DB22974691A005ADD7C /* FLChartConfig.swift in Sources */,
 				1A84DBD5296C59F700A9071E /* DeviceCell.swift in Sources */,
 				1A84DC0C296D6AC500A9071E /* UserDeviceCell.swift in Sources */,
 				1AFE49E0296EB3E50096927C /* EditUserViewController.swift in Sources */,
 				1A84DC02296CFDE000A9071E /* ButtonPrimary.swift in Sources */,
 				1A84DC00296CF5DE00A9071E /* AvatarView.swift in Sources */,
 				1A84DB922966C55B00A9071E /* UserViewController.swift in Sources */,
+				1A837DC72974691A005ADD7C /* CAAnimationBlockCallbackDelegate.swift in Sources */,
 				1A84DB962966C58600A9071E /* DeviceViewController.swift in Sources */,
+				1A837DB32974691A005ADD7C /* FLAxesLabelConfig.swift in Sources */,
 				1A65D5E3296EBCAB00DE1BCC /* AvatarHeaderCell.swift in Sources */,
 				1A65D5DB296EBA7B00DE1BCC /* UserProfileCell.swift in Sources */,
+				1A837DB52974691A005ADD7C /* FLDataSet.swift in Sources */,
 				1A84DBA22967149700A9071E /* HiFPTTabbar.swift in Sources */,
+				1A837DAD2974691A005ADD7C /* FLStylable.swift in Sources */,
 				1A84DBA72967C57B00A9071E /* FilterCell.swift in Sources */,
+				1A837DB72974691A005ADD7C /* PlotableData.swift in Sources */,
+				1A837DAA2974691A005ADD7C /* FLBarPlotView.swift in Sources */,
 				1A84DBAB2967CDC700A9071E /* PCUser.swift in Sources */,
 				1A65D5E7296ECBAC00DE1BCC /* HeaderView.swift in Sources */,
 				1A50789F297080A600E73E64 /* UserInfoCell.swift in Sources */,
 				1A84DBA42967BE0200A9071E /* BaseViewController.swift in Sources */,
 				1A84DC06296D5EB100A9071E /* BannedContentCell.swift in Sources */,
+				1A837DAF2974691A005ADD7C /* FLDashedLineConfig.swift in Sources */,
 				1A65D602297005CF00DE1BCC /* PopupManager.swift in Sources */,
+				1A837DBB2974691A005ADD7C /* HighlightedView.swift in Sources */,
+				1A837DAB2974691A005ADD7C /* FLPlotView.swift in Sources */,
+				1A837DB12974691A005ADD7C /* FLTickConfig.swift in Sources */,
+				1A837DC22974691A005ADD7C /* FLColor.swift in Sources */,
+				1A837D7D2974673A005ADD7C /* TimeLimitCell.swift in Sources */,
 				1AFE49C7296E62BC0096927C /* TextField.swift in Sources */,
+				1A837DC82974691A005ADD7C /* Formatters.swift in Sources */,
 				1A65D5FE296FFA9F00DE1BCC /* PhotoSourceViewController.swift in Sources */,
+				1A837D79297466CD005ADD7C /* ChartInfoCell.swift in Sources */,
 				1A84DB902966C2B800A9071E /* ParentalControlTabControllerViewController.swift in Sources */,
 				1A65D5EC296FAE8D00DE1BCC /* AvatarPickerViewController.swift in Sources */,
 				1A84DBAF2968048400A9071E /* PCUserCell.swift in Sources */,
 				1A84DBD1296C131F00A9071E /* Color.swift in Sources */,
 				1AFE49E5296EB6BF0096927C /* PCAssignedDeviceCell.swift in Sources */,
+				1A837DB82974691A005ADD7C /* UnclippedTopCollectionView.swift in Sources */,
 				1A65D5D7296EB8F000DE1BCC /* AddMoreDeviceCell.swift in Sources */,
+				1A837DB92974691A005ADD7C /* BarHighlightedView.swift in Sources */,
 				1A35327E296DEBA500C7003E /* UIImageView+TintRuntime.swift in Sources */,
 				1A84DBCE296BE81000A9071E /* UIView+Animation.swift in Sources */,
 				1A84DB992966CAA700A9071E /* UIImage+Resizable.swift in Sources */,
 				1A50789C297079F500E73E64 /* HeaderBarViewController.swift in Sources */,
+				1A837DB42974691A005ADD7C /* FLChartData.swift in Sources */,
 				1A84DBB8296BB25100A9071E /* UITableView+CellRegister.swift in Sources */,
+				1A837DC12974691A005ADD7C /* FLPlainChartBar.swift in Sources */,
+				1A837DC52974691A005ADD7C /* Chart+XT.swift in Sources */,
+				1A837DBC2974691A005ADD7C /* BarFocusView.swift in Sources */,
+				1A837DAC2974691A005ADD7C /* FLChart.swift in Sources */,
 				1A84DB9B2966D1B300A9071E /* UINavigationBar+Style.swift in Sources */,
+				1A837DC32974691A005ADD7C /* Label.swift in Sources */,
+				1A837DC62974691A005ADD7C /* NSLayoutConstraint+XT.swift in Sources */,
 				1A65D5F3296FCA5500DE1BCC /* AvatarCell.swift in Sources */,
 				1A84DBB229680DF200A9071E /* PCDevice.swift in Sources */,
+				1A837DB62974691A005ADD7C /* Key.swift in Sources */,
 				1A84DB7C2966B3EC00A9071E /* AppDelegate.swift in Sources */,
 				1A353286296E4BFF00C7003E /* ParentalControlConstant.swift in Sources */,
 				1A84DB7E2966B3EC00A9071E /* SceneDelegate.swift in Sources */,
 				1A65D5DF296EBBCB00DE1BCC /* UserNameTfCell.swift in Sources */,
+				1A837DA92974691A005ADD7C /* CircularProgressView.swift in Sources */,
 				1A5078A22970EB5D00E73E64 /* EmptyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

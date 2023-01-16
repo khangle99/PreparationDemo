@@ -108,16 +108,12 @@ class CustomHeightViewController: UIViewController {
             let window = UIApplication.shared.keyWindow
             originTopInset = window?.safeAreaInsets.top ?? 0
         }
-//        // 23:4 ratio
-//        let vcWidth = view.bounds.width
-//
-//        let navHeight = navigationController?.navigationBar.frame.height ?? 0
-//        let safeAreaWithouNavBar = originTopInset - navHeight
-//
-//        let headerTargetHeight: CGFloat = safeAreaWithouNavBar + vcWidth*4/23.0
-//         rule: originInset + additionInset = headerTargetHeight
-//        return headerTargetHeight - originTopInset
-        let targetHeight = view.bounds.width*4/23.0
-        return targetHeight - originTopInset
+        
+        let navBarTargetHeight = view.bounds.width*4/23.0
+        
+        let originNavBarHeight = navigationController?.navigationBar.frame.height ?? 0
+        let statusBarHeight = originTopInset - originNavBarHeight
+        let totalHeaderHeight = statusBarHeight + navBarTargetHeight
+        return totalHeaderHeight - originTopInset
     }
 }

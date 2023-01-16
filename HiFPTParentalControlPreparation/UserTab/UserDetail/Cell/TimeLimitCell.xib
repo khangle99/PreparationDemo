@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="264" id="KGk-i7-Jjw" customClass="TimeLimitCell" customModule="HiFPTParentalControlPreparation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="264"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="492" height="264"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thứ 2 - Thứ 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Et-JJ-k1j">
+                        <rect key="frame" x="16" y="45" width="460" height="17"/>
+                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                        <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thứ 7 - Chủ Nhật" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJJ-Vd-ZFM">
+                        <rect key="frame" x="16" y="104" width="460" height="17"/>
+                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                        <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="8 tiếng 00 phút" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="be2-dr-fKM">
+                        <rect key="frame" x="16" y="70" width="460" height="22"/>
+                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                        <color key="textColor" red="0.27058823529411763" green="0.39215686274509803" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="12 tiếng 30 phút" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXe-HF-ugY">
+                        <rect key="frame" x="16" y="129" width="460" height="22"/>
+                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.3921568627" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Được phép truy cập mạng trong " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLz-1f-cfm">
+                        <rect key="frame" x="16" y="16" width="460" height="17"/>
+                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                        <color key="textColor" red="0.46274509803921571" green="0.46274509803921571" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Không được truy cập vàp khung giờ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLh-Qw-NCD">
+                        <rect key="frame" x="16" y="176" width="460" height="17"/>
+                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                        <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="11:00 PM - 07:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uo4-75-54i">
+                        <rect key="frame" x="16" y="205" width="460" height="22"/>
+                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                        <color key="textColor" red="1" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pjX-qy-7AW">
+                        <rect key="frame" x="16" y="163" width="460" height="1"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.89803921568627454" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zSX-i8-GFx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PLz-1f-cfm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0Yq-3j-AsO"/>
+                    <constraint firstItem="be2-dr-fKM" firstAttribute="top" secondItem="5Et-JJ-k1j" secondAttribute="bottom" constant="8" id="8mm-BI-Ava"/>
+                    <constraint firstItem="be2-dr-fKM" firstAttribute="trailing" secondItem="PLz-1f-cfm" secondAttribute="trailing" id="99l-Kn-Rlr"/>
+                    <constraint firstItem="Uo4-75-54i" firstAttribute="leading" secondItem="PLz-1f-cfm" secondAttribute="leading" id="ApQ-hO-B74"/>
+                    <constraint firstAttribute="trailing" secondItem="PLz-1f-cfm" secondAttribute="trailing" constant="16" id="AqQ-ni-wzq"/>
+                    <constraint firstItem="pjX-qy-7AW" firstAttribute="leading" secondItem="PLz-1f-cfm" secondAttribute="leading" id="Dbw-1U-hn4"/>
+                    <constraint firstItem="CJJ-Vd-ZFM" firstAttribute="top" secondItem="be2-dr-fKM" secondAttribute="bottom" constant="12" id="Jcl-Zn-Ov8"/>
+                    <constraint firstItem="5Et-JJ-k1j" firstAttribute="trailing" secondItem="PLz-1f-cfm" secondAttribute="trailing" id="LmR-8O-r6y"/>
+                    <constraint firstItem="QXe-HF-ugY" firstAttribute="top" secondItem="CJJ-Vd-ZFM" secondAttribute="bottom" constant="8" id="MVh-GK-997"/>
+                    <constraint firstItem="5Et-JJ-k1j" firstAttribute="leading" secondItem="PLz-1f-cfm" secondAttribute="leading" id="PG1-mx-WXb"/>
+                    <constraint firstItem="be2-dr-fKM" firstAttribute="leading" secondItem="PLz-1f-cfm" secondAttribute="leading" id="T2Q-TG-FsT"/>
+                    <constraint firstItem="zLh-Qw-NCD" firstAttribute="trailing" secondItem="PLz-1f-cfm" secondAttribute="trailing" id="TKa-rI-Q1O"/>
+                    <constraint firstItem="Uo4-75-54i" firstAttribute="top" secondItem="zLh-Qw-NCD" secondAttribute="bottom" constant="12" id="U6e-9v-1MM"/>
+                    <constraint firstItem="5Et-JJ-k1j" firstAttribute="top" secondItem="PLz-1f-cfm" secondAttribute="bottom" constant="12" id="VMc-Gp-2lv"/>
+                    <constraint firstItem="zLh-Qw-NCD" firstAttribute="top" secondItem="pjX-qy-7AW" secondAttribute="bottom" constant="12" id="W12-7a-8wb"/>
+                    <constraint firstItem="CJJ-Vd-ZFM" firstAttribute="leading" secondItem="PLz-1f-cfm" secondAttribute="leading" id="hhu-yK-paD"/>
+                    <constraint firstItem="CJJ-Vd-ZFM" firstAttribute="trailing" secondItem="PLz-1f-cfm" secondAttribute="trailing" id="hqq-ph-IUJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Uo4-75-54i" secondAttribute="bottom" constant="16" id="inI-gp-3i6"/>
+                    <constraint firstItem="pjX-qy-7AW" firstAttribute="top" secondItem="QXe-HF-ugY" secondAttribute="bottom" constant="12" id="jHY-Ay-jbu"/>
+                    <constraint firstItem="zLh-Qw-NCD" firstAttribute="leading" secondItem="PLz-1f-cfm" secondAttribute="leading" id="lt6-cs-szV"/>
+                    <constraint firstItem="PLz-1f-cfm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="pgv-2i-AAb"/>
+                    <constraint firstItem="QXe-HF-ugY" firstAttribute="leading" secondItem="PLz-1f-cfm" secondAttribute="leading" id="qda-cp-uDh"/>
+                    <constraint firstItem="Uo4-75-54i" firstAttribute="trailing" secondItem="PLz-1f-cfm" secondAttribute="trailing" id="qpQ-x6-G0n"/>
+                    <constraint firstItem="pjX-qy-7AW" firstAttribute="trailing" secondItem="PLz-1f-cfm" secondAttribute="trailing" id="tzB-Wp-XNr"/>
+                    <constraint firstItem="QXe-HF-ugY" firstAttribute="trailing" secondItem="PLz-1f-cfm" secondAttribute="trailing" id="xuc-pC-Ide"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="25.954198473282442" y="64.788732394366207"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -22,4 +22,5 @@ struct Colors {
     static let border = UIColor(rgb: 0xDDDDDD)
     static let lineBlue = UIColor(rgb: 0x89A7FE)
     static let black = UIColor(rgb: 0x696969)
+    static let chartCirle = UIColor(rgb: 0xBFCBFF)
 }
