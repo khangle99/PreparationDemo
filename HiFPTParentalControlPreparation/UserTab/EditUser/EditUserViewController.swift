@@ -56,7 +56,7 @@ class EditUserViewController: CustomHeightViewController {
         self.view.addGestureRecognizer(tap)
     }
     
-    @objc func outsideTapped(sender: UIView) {
+    @objc func outsideTapped(sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
 

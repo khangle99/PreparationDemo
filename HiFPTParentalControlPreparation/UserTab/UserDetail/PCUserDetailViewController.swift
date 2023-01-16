@@ -87,11 +87,11 @@ class PCUserDetailViewController: CustomHeightViewController {
         connectionBtn.addGestureRecognizer(connectionTapGes)
     }
     
-    @objc func deleteUserTapped(sender: UIView) {
+    @objc func deleteUserTapped(sender: UITapGestureRecognizer) {
         self.view.makeToast("Fake delete api call", point: .init(x: self.view.bounds.width/2, y: self.view.bounds.height - 150), title: nil, image: nil, completion: nil)
     }
     
-    @objc func connectionTapped(sender: UIView) {
+    @objc func connectionTapped(sender: UITapGestureRecognizer) {
         user?.isConnecting.toggle()
         if let user = self.user {
             let isConnection = user.isConnecting

@@ -63,20 +63,20 @@ class PCUserCell: UITableViewCell {
 
     }
     
-    @objc func cellTapped(sender: UIView) {
+    @objc func cellTapped(sender: UITapGestureRecognizer) {
         if let user = user {
             onCellTapped?(user)
         }
     }
     
-    @objc func connectionTapped(sender: UIView) {
+    @objc func connectionTapped(sender: UITapGestureRecognizer) {
         if let user = user {
             connectionButton.tapAnimate()
             onConnectTapped?(user)
         }
     }
     
-    @objc func deleteUserTapped(sender: UIView) {
+    @objc func deleteUserTapped(sender: UITapGestureRecognizer) {
         if let user = user {
             deleteUserButton.tapAnimate()
             onDeleteUserTapped?(user)

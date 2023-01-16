@@ -36,11 +36,11 @@ class PhotoSourceViewController: UIViewController {
         closeBtn.addGestureRecognizer(closeGes)
     }
     
-    @objc func closeTapped(sender: UIView) {
+    @objc func closeTapped(sender: UITapGestureRecognizer) {
         dismiss(animated: true)
     }
     
-    @objc func uploadTapped(sender: UIView) {
+    @objc func uploadTapped(sender: UITapGestureRecognizer) {
         let vc = UIImagePickerController()
         vc.sourceType = .photoLibrary
         vc.allowsEditing = true
@@ -48,7 +48,7 @@ class PhotoSourceViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    @objc func takePhotoTapped(sender: UIView) {
+    @objc func takePhotoTapped(sender: UITapGestureRecognizer) {
         let vc = UIImagePickerController()
         vc.sourceType = .camera
         vc.allowsEditing = true

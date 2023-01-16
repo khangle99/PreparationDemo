@@ -29,7 +29,7 @@ class AvatarHeaderCell: UICollectionViewCell {
         avatarImgView.addGestureRecognizer(tap)
     }
     
-    @objc func avatarTapped(sender: UIImageView) {
+    @objc func avatarTapped(sender: UITapGestureRecognizer) {
         onAvatarTapped?()
     }
 }

@@ -143,7 +143,7 @@ class TabItemView: UIView {
         setupTapGesture()
     }
     
-    @objc func tapped(sender: UIView) {
+    @objc func tapped(sender: UITapGestureRecognizer) {
         onTapped?(index)
     }
     

@@ -28,7 +28,7 @@ class AvatarCell: UICollectionViewCell {
         checkImgView.isHidden = !isSelected
     }
     
-    @objc func removeTapped(sender: UIImageView) {
+    @objc func removeTapped(sender: UITapGestureRecognizer) {
         print("remove tapped")
         onRemoveTapped?()
     }

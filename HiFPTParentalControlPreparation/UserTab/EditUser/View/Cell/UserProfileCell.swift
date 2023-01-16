@@ -37,7 +37,7 @@ class UserProfileCell: UICollectionViewCell {
         self.addGestureRecognizer(tap)
     }
     
-    @objc func cellTapped(sender: UICollectionViewCell) {
+    @objc func cellTapped(sender: UITapGestureRecognizer) {
         onTapped?()
     }
 }

@@ -35,7 +35,7 @@ class AddMoreDeviceCell: UICollectionViewCell {
         self.addGestureRecognizer(tapGes)
     }
     
-    @objc func cellTapped(sender: UICollectionViewCell) {
+    @objc func cellTapped(sender: UITapGestureRecognizer) {
         onCellTapped?()
     }
 

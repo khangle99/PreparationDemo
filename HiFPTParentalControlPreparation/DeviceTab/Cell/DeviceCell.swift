@@ -65,7 +65,7 @@ class DeviceCell: UITableViewCell {
         }
     }
     
-    @objc func assignTapped(sender: UIView) {
+    @objc func assignTapped(sender: UITapGestureRecognizer) {
         assignBtn.tapAnimate()
         if let device = device {
             onAssignTapped?(device)
